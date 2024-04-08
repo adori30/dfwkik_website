@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import Zoom from 'react-medium-image-zoom'
+import WhereToFindUs from "./where-to-find-us";
 import { ReactNode } from "react";
 
 export default function HomePage() {
@@ -24,14 +27,6 @@ function TextureBackground({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <div className="pattern-cross pattern-slate-600 pattern-bg-slate-700 pattern-size-8 pattern-opacity-100 bg-slate-700">
       {children}
-    </div>
-  );
-}
-
-function WhereToFindUs() {
-  return (
-    <div className="flex min-h-96 flex-col md:flex-row">
-      <div>You can find us here</div>
     </div>
   );
 }
@@ -82,9 +77,14 @@ function DisciplineTile({
   );
 }
 
-function HeaderButton({ children, className }: Readonly<{ children: ReactNode, className?: string | undefined }>) {
+function HeaderButton({
+  children,
+  className,
+}: Readonly<{ children: ReactNode; className?: string }>) {
   return (
-    <div className={`cursor-pointer border bg-slate-700 p-3 text-xl font-light uppercase transition-all hover:bg-slate-300 hover:text-slate-700 ${className}`}>
+    <div
+      className={`cursor-pointer border bg-slate-700 p-3 text-xl font-light uppercase transition-all hover:bg-slate-300 hover:text-slate-700 ${className}`}
+    >
       {children}
     </div>
   );
@@ -153,7 +153,6 @@ function Header() {
       </nav> */}
 
       <div className="relative flex h-96 items-center justify-center ">
-        {/* <div className="pattern-cross pattern-indigo-500 pattern-bg-white pattern-size-8 pattern-opacity-10 absolute h-full w-full"></div> */}
         <Image
           src={"/kamae_clipped.png"}
           width={1500}
@@ -184,7 +183,11 @@ function Header() {
             Learn the arts of Japanese swordsmanship at the oldest dojo in DFW
           </div>
           <div className="text-xl font-thin">Established 1976</div>
-          <HeaderButton className="mt-4">Join us now</HeaderButton>
+          <HeaderButton className="mt-4">
+            <Link href="https://www.dfwkik.org/dallas/membership/">
+              Join us now
+            </Link>
+          </HeaderButton>
         </div>
       </div>
 
