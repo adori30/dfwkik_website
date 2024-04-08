@@ -8,7 +8,7 @@ export default function HomePage() {
     // <div className="flex min-h- bg-cover bg-center bg-[url('../../public/kamae.jpg')] items-center justify-center">hello there</div>
     <TextureBackground>
       <HeaderPicture />
-      <div className="flex flex-col ">
+      <div className="flex flex-col">
         <Header />
         <div className="bg-slate-300 p-12 text-center md:text-4xl text-2xl font-thin text-gray-950">
           Our disciplines
@@ -25,7 +25,7 @@ export default function HomePage() {
 
 function TextureBackground({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <div className="pattern-cross pattern-slate-600 pattern-bg-slate-700 pattern-size-8 pattern-opacity-100 bg-slate-700 h-full">
+    <div className="pattern-cross pattern-slate-600 pattern-bg-slate-700 pattern-size-8 pattern-opacity-100 bg-slate-700">
       {children}
     </div>
   );
@@ -47,7 +47,7 @@ function HeaderPicture() {
 function Header() {
   return (
     <div className="flex h-96 items-center justify-center ">
-      <div className="container absolute left-8 top-8 flex flex-row items-center">
+      <div className="absolute left-8 top-8 flex flex-row items-center">
         <Image
           src={"/logo_color.png"}
           width={30}
