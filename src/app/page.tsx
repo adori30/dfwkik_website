@@ -1,19 +1,44 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
 export default function HomePage() {
   return (
     // <div className="flex min-h- bg-cover bg-center bg-[url('../../public/kamae.jpg')] items-center justify-center">hello there</div>
-    <div className="flex flex-col">
-      <Header />
-      <div className="text-center p-12 text-xl">Our disciplines</div>
-      <Disciplines />
+    <TextureBackground>
+      <div className="flex flex-col ">
+        <Header />
+        <div className="bg-slate-300 p-12 text-center text-4xl font-thin text-gray-950">
+          Our disciplines
+        </div>
+        <Disciplines />
+        <div className="p-12 text-center text-4xl font-thin">
+          Where to find us
+        </div>
+        <WhereToFindUs />
+      </div>
+    </TextureBackground>
+  );
+}
+
+function TextureBackground({ children }: Readonly<{ children: ReactNode }>) {
+  return (
+    <div className="pattern-cross pattern-slate-600 pattern-bg-slate-700 pattern-size-8 pattern-opacity-100 bg-slate-700">
+      {children}
+    </div>
+  );
+}
+
+function WhereToFindUs() {
+  return (
+    <div className="flex min-h-96 flex-col md:flex-row">
+      <div>You can find us here</div>
     </div>
   );
 }
 
 function Disciplines() {
   return (
-    <div className="flex min-h-96 min-w-max md:flex-row flex-col">
+    <div className="flex min-h-96 min-w-max flex-col bg-slate-300 md:flex-row">
       <DisciplineTile
         name="Kendo"
         description="Japanese martial art emphasizing swordsmanship."
@@ -37,28 +62,19 @@ function DisciplineTile({
   name,
   description,
   backgroundImg,
-}: {
+}: Readonly<{
   name: string;
   description: string;
   backgroundImg: string;
-}) {
+}>) {
   return (
-    // <div
-    //   className="flex-1 bg-cover bg-center m-4 transition hover:bg-slate-500"
-    //   style={{ backgroundImage: `url('/${backgroundImg}')` }}
-    // >
-    //   <div className="text-center content-center hover:-translate-y-1/4 transition w-full h-full text-5x">
-    //     {name}
-    //   </div>
-    // </div>
-
     <div
-      className="relative flex-1 bg-cover bg-center m-4 transition-all hover:pb-28  text-5xl cursor-pointer"
+      className="relative m-4 flex-1 cursor-pointer bg-cover bg-center text-5xl  transition-all hover:pb-28"
       style={{ backgroundImage: `url('/${backgroundImg}')` }}
     >
-      <div className="absolute flex flex-col items-center justify-center w-full h-full z-10 text-center content-center hover:pb-28 transition-all hover:bg-black hover:bg-opacity-50">
+      <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all hover:bg-black hover:bg-opacity-50 hover:pb-28">
         {name}
-        <div className="absolute w-full h-full opacity-0 hover:opacity-100 transition-all flex items-center justify-center mt-28 text-xl">
+        <div className="absolute mt-28 flex h-full w-full items-center justify-center text-xl opacity-0 transition-all hover:opacity-100">
           {description}
         </div>
       </div>
@@ -66,10 +82,18 @@ function DisciplineTile({
   );
 }
 
+function HeaderButton({ children, className }: Readonly<{ children: ReactNode, className?: string | undefined }>) {
+  return (
+    <div className={`cursor-pointer border bg-slate-700 p-3 text-xl font-light uppercase transition-all hover:bg-slate-300 hover:text-slate-700 ${className}`}>
+      {children}
+    </div>
+  );
+}
+
 function Header() {
   return (
     <header>
-      <nav className="bg-white shadow">
+      {/* <nav className="bg-white shadow">
         <div className="container mx-auto px-6 py-3 ">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex justify-between items-center">
@@ -126,129 +150,53 @@ function Header() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
-      <div className="w-full bg-cover bg-center bg-[url('../../public/kamae.jpg')] h-96">
-        <div className="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
+      <div className="relative flex h-96 items-center justify-center ">
+        {/* <div className="pattern-cross pattern-indigo-500 pattern-bg-white pattern-size-8 pattern-opacity-10 absolute h-full w-full"></div> */}
+        <Image
+          src={"/kamae_clipped.png"}
+          width={1500}
+          height={500}
+          alt="picture of a kendoka"
+          style={{
+            objectFit: "none",
+            position: "absolute",
+            top: -300,
+            right: 0,
+          }}
+        />
+        <div className="container absolute left-8 top-8 flex flex-row items-center">
+          <Image
+            src={"/logo_color.png"}
+            width={30}
+            height={30}
+            alt="logo"
+            className="mr-2"
+          />
+          <div className="font-sans text-2xl font-extralight">
+            Dallas/Fort Worth Kendo & Iaido Kyokai
+          </div>
+        </div>
+
+        <div className="relative z-10 mr-28 flex flex-col items-center">
+          <div className="text-3xl font-light">
+            Learn the arts of Japanese swordsmanship at the oldest dojo in DFW
+          </div>
+          <div className="text-xl font-thin">Established 1976</div>
+          <HeaderButton className="mt-4">Join us now</HeaderButton>
+        </div>
+      </div>
+
+      {/* <div className="w-full bg-right bg-cover bg-no-repeat bg-[url('../../public/kamae_clipped.png')] h-96 pr-48">
+        <div className="flex items-center justify-center h-full w-full">
           <div className="text-center">
             <h1 className="text-white text-2xl font-semibold uppercase md:text-3xl">
               Dallas/Fort Worth Kendo & Iaido Kyokai
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
     </header>
-  );
-}
-
-function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
   );
 }
