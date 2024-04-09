@@ -5,7 +5,6 @@ import { ReactNode } from "react";
 
 export default function HomePage() {
   return (
-    // <div className="flex min-h- bg-cover bg-center bg-[url('../../public/kamae.jpg')] items-center justify-center">hello there</div>
     <TextureBackground>
       <HeaderPicture />
       <div className="flex flex-col">
@@ -47,8 +46,8 @@ function HeaderPicture() {
 
 function Header() {
   return (
-    <div className="flex h-96 items-center justify-center ">
-      <div className="absolute left-8 top-8 flex flex-row items-center">
+    <div className="flex h-96 items-center justify-center">
+      <div className="absolute md:left-8 md:top-8 left-4 top-4 flex flex-row items-center">
         <Image
           src={"/logo_color.png"}
           width={30}
@@ -61,12 +60,12 @@ function Header() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col items-center md:mr-28">
-        <div className="p-4 text-xl font-light md:text-3xl">
+      <div className="relative z-10 flex flex-col items-center md:mr-28 h-full justify-center">
+        <div className="p-4 text-xl font-light md:text-3xl mt-auto md:mt-0">
           Learn the arts of Japanese swordsmanship in DFW
         </div>
-        <div className="font-thin md:text-xl">Established 1976</div>
-        <HeaderButton className="mt-4">
+        <div className="font-thin md:text-xl self-start pl-4 mb-auto md:mb-0">Established 1976</div>
+        <HeaderButton className="mb-8 md:mb-0">
           <Link href="https://www.dfwkik.org/dallas/membership/">
             Join us now
           </Link>
@@ -147,9 +146,8 @@ function ClassSchedule() {
             <td className="text-left pl-8 md:text-xl text-sm">Iaido</td>
           </tr>
           <tr className="border-b-2 border-slate-700">
-            <td></td>
-            <td></td>
-            <td className="text-left pl-8 pb-4 md:text-xl text-sm">Jodo (1st Tuesday of each month)</td>
+            <td colSpan={2} className="text-right md:text-xl text-sm align-top">1st Tuesday of the month</td>
+            <td className="text-left pl-8 pb-4 md:text-xl text-sm">Jodo</td>
           </tr>
           <tr className="border-b-2 border-slate-700">
             <td className="font-semibold pt-4 pb-4 text-left">Thursday</td>
