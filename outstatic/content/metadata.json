@@ -1,0 +1,24 @@
+{
+  "commit": "c03b092dc9d81d2d707f305440be7d7aca694068",
+  "generated": "Tue, 09 Apr 2024 20:32:08 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "07bc1b8399aea0a57b1641fbe4f34b1af42bacca",
+        "hash": "2500059981",
+        "path": "outstatic/content/content/kendo.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-04-09T16:26:15.120Z",
+      "slug": "kendo",
+      "status": "published",
+      "title": "Kendo"
+    }
+  ]
+}
