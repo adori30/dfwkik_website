@@ -2,20 +2,19 @@ import markdownToHtml from "@/lib/markdown-to-html";
 import { getDocumentBySlug } from "outstatic/server";
 
 async function getData(params: { slug: string }) {
-  const discipline = getDocumentBySlug("Content", 'kendo', [
+  const discipline = getDocumentBySlug("Content", params.slug, [
     "title",
     "content",
   ]);
 
-console.log(discipline)
+  console.log(discipline);
 
   const content = await markdownToHtml(discipline?.content || "");
 
-
   return {
     title: discipline?.title,
-    content
-  }
+    content,
+  };
 }
 
 export default async function DisciplinePage({
@@ -28,7 +27,7 @@ export default async function DisciplinePage({
     <div>
       <div>Content for {params.slug}</div>
       <div>Title: {data.title}</div>
-      <div>{data.content}</div>
+      <div dangerouslySetInnerHTML={{ __html: data.content }}></div>
     </div>
   );
 }
