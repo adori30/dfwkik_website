@@ -10,4 +10,8 @@ coverImage: ''
 publishedAt: '2024-04-09T16:26:15.120Z'
 ---
 
-Kendo is a very cool martial arts that lets you play with swords
+Kendo is a very cool martial arts that lets you play with swords. Let me tell you more.
+
+## Introduction
+
+Very short intro.
