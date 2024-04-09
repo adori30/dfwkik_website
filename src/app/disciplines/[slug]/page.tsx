@@ -1,5 +1,5 @@
 import markdownToHtml from "@/lib/markdown-to-html";
-import { getDocumentBySlug } from "outstatic/server";
+import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
 
 async function getData(params: { slug: string }) {
   const discipline = getDocumentBySlug("content", params.slug, [
@@ -16,6 +16,11 @@ async function getData(params: { slug: string }) {
     content,
   };
 }
+
+export async function generateStaticParams() {
+    const posts = getDocumentSlugs('content')
+    return posts.map((slug) => ({ slug }))
+  }
 
 export default async function DisciplinePage({
   params,
