@@ -2,7 +2,7 @@ import markdownToHtml from "@/lib/markdown-to-html";
 import { getDocumentBySlug } from "outstatic/server";
 
 async function getData(params: { slug: string }) {
-  const discipline = getDocumentBySlug("Content", params.slug, [
+  const discipline = getDocumentBySlug("content", params.slug, [
     "title",
     "content",
   ]);
