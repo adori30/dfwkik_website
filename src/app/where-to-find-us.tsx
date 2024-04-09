@@ -7,8 +7,8 @@ import "react-medium-image-zoom/dist/styles.css";
 
 export default function WhereToFindUs() {
   return (
-    <div className="m-4 flex md:h-96 flex-col justify-between md:flex-row">
-      <div className="content-center pl-16 pr-16 text-xl font-extralight md:w-1/2 md:text-2xl">
+    <div className="m-4 flex flex-col justify-between md:mb-12 md:h-96 md:flex-row">
+      <div className="content-center md:pl-16 md:pr-16 text-xl font-extralight md:w-1/2 md:text-2xl">
         <div>
           We practice at Greenhill School. It is located on the North West
           corner of of Midway and Spring Valley. Practice is held in the Main
@@ -21,12 +21,12 @@ export default function WhereToFindUs() {
           </Link>
         </div>
       </div>
-      <div className="flex md:h-96 flex-row content-end md:justify-end md:w-1/2 justify-center">
+      <div className="flex flex-row content-end justify-center md:h-96 md:w-1/2 md:justify-end">
         <Zoom>
           <img
             alt="Map of the dojo location"
             src="/greenhill_map.jpg"
-            className="md:h-96 h-44 m-4"
+            className="m-4 h-44 md:h-96"
           />
         </Zoom>
       </div>
