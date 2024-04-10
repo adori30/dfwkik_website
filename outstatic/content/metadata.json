@@ -1,6 +1,6 @@
 {
-  "commit": "55e5678997a1b99396f85739cb6d49d1d4b39dbd",
-  "generated": "2024-04-10T19:31:30.376Z",
+  "commit": "3139ab72d25884feec75dc29ce4ebe8280b97ad6",
+  "generated": "2024-04-10T19:31:47.148Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,24 @@
       "slug": "kendo",
       "status": "published",
       "title": "Kendo"
+    },
+    {
+      "__outstatic": {
+        "commit": "3139ab72d25884feec75dc29ce4ebe8280b97ad6",
+        "hash": "4092693148",
+        "path": "outstatic/content/disciplines/iaido.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "disciplines",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-04-10T19:01:36.794Z",
+      "slug": "iaido",
+      "status": "draft",
+      "title": "Iaido"
     }
   ]
 }
