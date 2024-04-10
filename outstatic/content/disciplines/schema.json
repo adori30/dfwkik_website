@@ -4,7 +4,7 @@
   "properties": {
     "inMenu": {
       "required": false,
-      "description": "the menu where to add the field",
+      "description": "the menu where to add the document",
       "fieldType": "String",
       "dataType": "string",
       "title": "in menu"
