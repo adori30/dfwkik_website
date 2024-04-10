@@ -1,6 +1,6 @@
 {
-  "commit": "d44ff610aa7fddb461107132c55aa4816a181b4e",
-  "generated": "2024-04-10T20:01:34.233Z",
+  "commit": "5cfdb0856dde2d877570ccf8bf908b541f432329",
+  "generated": "2024-04-10T20:23:29.760Z",
   "metadata": [
     {
       "__outstatic": {
@@ -94,8 +94,8 @@
     },
     {
       "__outstatic": {
-        "commit": "d44ff610aa7fddb461107132c55aa4816a181b4e",
-        "hash": "1024141456",
+        "commit": "5cfdb0856dde2d877570ccf8bf908b541f432329",
+        "hash": "4232095454",
         "path": "outstatic/content/disciplines/iaido.md"
       },
       "author": {
@@ -105,7 +105,7 @@
       "collection": "disciplines",
       "coverImage": "",
       "description": "",
-      "inMenu": "Disciplines",
+      "inMenu": "disciplines",
       "publishedAt": "2024-04-10T19:01:36.794Z",
       "slug": "iaido",
       "status": "published",

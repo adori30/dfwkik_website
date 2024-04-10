@@ -7,7 +7,7 @@ author:
 slug: 'iaido'
 description: ''
 coverImage: ''
-inMenu: 'Disciplines'
+inMenu: 'disciplines'
 publishedAt: '2024-04-10T19:01:36.794Z'
 ---
 
