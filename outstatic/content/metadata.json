@@ -1,6 +1,6 @@
 {
-  "commit": "9cb40d2fcebe7beb4cf370710237d53168918fec",
-  "generated": "2024-04-10T19:32:11.100Z",
+  "commit": "4ef4268ee5dea8e644193a5f0d53a8cecb9073a0",
+  "generated": "2024-04-10T19:58:08.605Z",
   "metadata": [
     {
       "__outstatic": {
@@ -91,6 +91,24 @@
       "slug": "jodo",
       "status": "published",
       "title": "Jodo"
+    },
+    {
+      "__outstatic": {
+        "commit": "4ef4268ee5dea8e644193a5f0d53a8cecb9073a0",
+        "hash": "1878017386",
+        "path": "outstatic/content/menus/disciplines.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-04-10T19:27:36.957Z",
+      "slug": "disciplines",
+      "status": "published",
+      "title": "Disciplines"
     }
   ]
 }
