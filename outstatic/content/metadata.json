@@ -1,6 +1,6 @@
 {
-  "commit": "ac31b29e2fd0708ecd4e442de87aaa79c7aa1b3b",
-  "generated": "2024-04-10T19:31:49.416Z",
+  "commit": "9cb40d2fcebe7beb4cf370710237d53168918fec",
+  "generated": "2024-04-10T19:32:11.100Z",
   "metadata": [
     {
       "__outstatic": {
@@ -73,6 +73,24 @@
       "slug": "iaido",
       "status": "published",
       "title": "Iaido"
+    },
+    {
+      "__outstatic": {
+        "commit": "9cb40d2fcebe7beb4cf370710237d53168918fec",
+        "hash": "1668259435",
+        "path": "outstatic/content/disciplines/jodo.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "disciplines",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-04-10T19:01:58.085Z",
+      "slug": "jodo",
+      "status": "published",
+      "title": "Jodo"
     }
   ]
 }
