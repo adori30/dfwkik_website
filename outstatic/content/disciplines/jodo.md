@@ -7,6 +7,7 @@ author:
 slug: 'jodo'
 description: ''
 coverImage: ''
+inMenu: 'about'
 publishedAt: '2024-04-10T19:01:58.085Z'
 ---
 

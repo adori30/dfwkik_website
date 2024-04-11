@@ -1,6 +1,6 @@
 {
-  "commit": "df1fa4e4e8c5a4409fdb66b49b5f1bce9bb158a6",
-  "generated": "2024-04-11T01:41:07.011Z",
+  "commit": "27b03510c98d6c597452bbd7f33aaaa76d09f529",
+  "generated": "2024-04-11T01:41:31.749Z",
   "metadata": [
     {
       "__outstatic": {
@@ -58,24 +58,6 @@
     },
     {
       "__outstatic": {
-        "commit": "9cb40d2fcebe7beb4cf370710237d53168918fec",
-        "hash": "1668259435",
-        "path": "outstatic/content/disciplines/jodo.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "disciplines",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-04-10T19:01:58.085Z",
-      "slug": "jodo",
-      "status": "published",
-      "title": "Jodo"
-    },
-    {
-      "__outstatic": {
         "commit": "4ef4268ee5dea8e644193a5f0d53a8cecb9073a0",
         "hash": "1878017386",
         "path": "outstatic/content/menus/disciplines.md"
@@ -128,6 +110,25 @@
       "slug": "about",
       "status": "draft",
       "title": "About"
+    },
+    {
+      "__outstatic": {
+        "commit": "27b03510c98d6c597452bbd7f33aaaa76d09f529",
+        "hash": "187349374",
+        "path": "outstatic/content/disciplines/jodo.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "disciplines",
+      "coverImage": "",
+      "description": "",
+      "inMenu": "about",
+      "publishedAt": "2024-04-10T19:01:58.085Z",
+      "slug": "jodo",
+      "status": "published",
+      "title": "Jodo"
     }
   ]
 }
