@@ -1,19 +1,19 @@
 import { getCollections, getDocumentSlugs, load } from "outstatic/server";
-import NavBarClient from "./nav-bar-client";
+import NavBarDesktop from "./nav-bar-desktop";
 import Image from "next/image";
-import MobileNavBar from "./mobile-nav-bar";
+import MobileNavBar from "./nav-bar-mobile";
 
 export default async function NavBar({
   className,
 }: Readonly<{ className?: string }>) {
   const navBarElements = await buildNavBarElements();
   return (
-    <div className={`flex bg-sky-800 pt-4 pb-4 md:p-0 z-30 relative flex-row justify-between items-center ${className}`}>
+    <div className={`flex bg-slate-300 text-slate-700 pt-4 pb-4 md:p-0 z-30 relative flex-row justify-between items-center ${className}`}>
       <SiteTitle />
       <div
         className={`right-0 z-20 hidden text-center text-slate-700 md:flex`}
       >
-        <NavBarClient elements={navBarElements} className="" />
+        <NavBarDesktop elements={navBarElements} className="text-slate-700" />
       </div>
       <div className="md:hidden">
         <MobileNavBar elements={navBarElements} />

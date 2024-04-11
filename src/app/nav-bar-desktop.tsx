@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const timeoutLength = 300;
 
-export default function NavBarClient({
+export default function NavBarDesktop({
   elements,
   className,
 }: Readonly<{
@@ -30,10 +30,9 @@ export default function NavBarClient({
             cursor-pointer
             items-center
             justify-center
-            border-r-sky-300
             p-4
             last:border-r-0
-            hover:bg-sky-300
+            hover:bg-slate-700
             hover:bg-opacity-10
              `}
           >
