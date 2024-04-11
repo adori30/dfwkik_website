@@ -23,8 +23,6 @@ export default function NavBarClient({
           <div
             key={menuTitle}
             className={`
-            hover:bg-dfwkikYellow
-            border-r-dfwkikYellow
             group
             relative
             flex
@@ -32,17 +30,18 @@ export default function NavBarClient({
             cursor-pointer
             items-center
             justify-center
-            border-r-2
+            border-r-sky-300
             p-4
             last:border-r-0
-            hover:text-slate-700 
+            hover:bg-sky-300
+            hover:bg-opacity-10
              `}
           >
             {menuTitle}
             {menuItems.length > 0 ? (
               <div className="invisible absolute left-0 top-10 z-20 flex  pt-8 transition-all group-hover:visible group-hover:top-12">
                 <div
-                  className={`w-28 rounded shadow-lg flex-col bg-sky-800 text-slate-100`}
+                  className={`w-28 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
                 >
                   {[
                     ...menuItems,
@@ -52,7 +51,7 @@ export default function NavBarClient({
                   ].map(({ title }) => (
                     <div
                       key="document"
-                      className="hover:bg-dfwkikYellow cursor-pointer p-2 hover:text-slate-700 first:rounded-t last:rounded-b"
+                      className="cursor-pointer p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10"
                     >
                       {title}
                     </div>
