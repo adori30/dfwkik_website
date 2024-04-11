@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import WhereToFindUs from "./where-to-find-us";
 import { ReactNode } from "react";
+import DojoMap from "./dojo-map";
+import NavBar from "./nav-bar";
 
 export default function HomePage() {
   return (
-    <TextureBackground>
+    <>
       <HeaderPicture />
+      <NavBar className="absolute left-0 top-8 right-0 m-auto" />
       <div className="flex flex-col">
         <Header />
         <div className="bg-slate-300 p-12 text-center text-2xl font-thin text-gray-950 md:text-4xl">
@@ -19,15 +21,7 @@ export default function HomePage() {
         <WhereToFindUs />
         <ClassSchedule />
       </div>
-    </TextureBackground>
-  );
-}
-
-function TextureBackground({ children }: Readonly<{ children: ReactNode }>) {
-  return (
-    <div className="pattern-cross pattern-slate-600 pattern-bg-slate-700 pattern-size-8 pattern-opacity-100 bg-slate-700">
-      {children}
-    </div>
+    </>
   );
 }
 
@@ -47,7 +41,7 @@ function HeaderPicture() {
 function Header() {
   return (
     <div className="flex h-96 items-center justify-center">
-      <div className="absolute md:left-8 md:top-8 left-4 top-4 flex flex-row items-center">
+      <div className="absolute left-4 top-4 flex flex-row items-center md:left-8 md:top-8">
         <Image
           src={"/logo_color.png"}
           width={30}
@@ -60,11 +54,13 @@ function Header() {
         </div>
       </div>
 
-      <div className="relative z-10 flex flex-col items-center md:mr-28 h-full justify-center">
-        <div className="p-4 text-xl font-light md:text-3xl mt-auto md:mt-0">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center md:mr-28">
+        <div className="mt-auto p-4 text-xl font-light md:mt-0 md:text-3xl">
           Learn the arts of Japanese swordsmanship in DFW
         </div>
-        <div className="font-thin md:text-xl self-start pl-4 mb-auto md:mb-0">Established 1976</div>
+        <div className="mb-auto self-start pl-4 font-thin md:mb-0 md:text-xl">
+          Established 1976
+        </div>
         <HeaderButton className="mb-8 md:mb-0">
           <Link href="https://www.dfwkik.org/dallas/membership/">
             Join us now
@@ -134,40 +130,71 @@ function HeaderButton({
   );
 }
 
+function WhereToFindUs() {
+  return (
+    <div className="m-4 flex flex-col justify-between md:mb-12 md:h-96 md:flex-row">
+      <div className="content-center text-xl font-extralight md:w-1/2 md:pl-16 md:pr-16 md:text-2xl">
+        <div>
+          We practice at Greenhill School. It is located on the North West
+          corner of of Midway and Spring Valley. Practice is held in the Main
+          Gymnasium (Indicated by H), best accessed from the Hornet Drive
+          entrance off of Midway (Indicated by O).
+        </div>
+        <div className="mt-12 underline">
+          <Link href={"https://maps.app.goo.gl/D13em6GkePDxQCyT7"}>
+            4141 Spring Valley Rd. Addison, Texas 75001
+          </Link>
+        </div>
+      </div>
+      <div className="flex flex-row content-end justify-center md:h-96 md:w-1/2 md:justify-end">
+        <DojoMap />
+      </div>
+    </div>
+  );
+}
+
 function ClassSchedule() {
   return (
-    <div className="bg-slate-300 md:p-12 pt-8 pb-8 items-center text-center text-2xl font-thin text-gray-950 md:text-4xl flex flex-col">
+    <div className="flex flex-col items-center bg-slate-300 pb-8 pt-8 text-center text-2xl font-thin text-gray-950 md:p-12 md:text-4xl">
       <div>Class schedule</div>
-      <div className="md:w-1/2 min-w-fit md:text-2xl text-lg md:m-8 mt-4">
+      <div className="mt-4 min-w-fit text-lg md:m-8 md:w-1/2 md:text-2xl">
         <table className="w-full font-extralight">
           <tr>
-            <td className="font-semibold text-left">Tuesday</td>
-            <td className="text-right md:text-xl text-sm">7:15 PM - 9:30 PM</td>
-            <td className="text-left pl-8 md:text-xl text-sm">Iaido</td>
+            <td className="text-left font-semibold">Tuesday</td>
+            <td className="text-right text-sm md:text-xl">7:15 PM - 9:30 PM</td>
+            <td className="pl-8 text-left text-sm md:text-xl">Iaido</td>
           </tr>
           <tr className="border-b-2 border-slate-700">
-            <td colSpan={2} className="text-right md:text-xl text-sm align-top">1st Tuesday of the month</td>
-            <td className="text-left pl-8 pb-4 md:text-xl text-sm">Jodo</td>
+            <td colSpan={2} className="text-right align-top text-sm md:text-xl">
+              1st Tuesday of the month
+            </td>
+            <td className="pb-4 pl-8 text-left text-sm md:text-xl">Jodo</td>
           </tr>
           <tr className="border-b-2 border-slate-700">
-            <td className="font-semibold pt-4 pb-4 text-left">Thursday</td>
-            <td className="text-right md:text-xl text-sm">7:15 PM - 9:30 PM</td>
-            <td className="text-left pl-8 md:text-xl text-sm">Kendo</td>
+            <td className="pb-4 pt-4 text-left font-semibold">Thursday</td>
+            <td className="text-right text-sm md:text-xl">7:15 PM - 9:30 PM</td>
+            <td className="pl-8 text-left text-sm md:text-xl">Kendo</td>
           </tr>
           <tr>
-            <td className="font-semibold pt-4 text-left">Sunday</td>
-            <td className="text-right pt-4 md:text-xl text-sm">9:15 AM - 10:30 AM</td>
-            <td className="text-left pl-8 pt-4 md:text-xl text-sm">Iaido</td>
+            <td className="pt-4 text-left font-semibold">Sunday</td>
+            <td className="pt-4 text-right text-sm md:text-xl">
+              9:15 AM - 10:30 AM
+            </td>
+            <td className="pl-8 pt-4 text-left text-sm md:text-xl">Iaido</td>
           </tr>
           <tr>
             <td></td>
-            <td className="text-right md:text-xl text-sm">10:40 AM - 11:10 AM</td>
-            <td className="text-left pl-8 md:text-xl text-sm">Kendo Kata</td>
+            <td className="text-right text-sm md:text-xl">
+              10:40 AM - 11:10 AM
+            </td>
+            <td className="pl-8 text-left text-sm md:text-xl">Kendo Kata</td>
           </tr>
           <tr>
             <td></td>
-            <td className="text-right md:text-xl text-sm">11:15 AM - 12:30 PM</td>
-            <td className="text-left pl-8 md:text-xl text-sm">Kendo</td>
+            <td className="text-right text-sm md:text-xl">
+              11:15 AM - 12:30 PM
+            </td>
+            <td className="pl-8 text-left text-sm md:text-xl">Kendo</td>
           </tr>
         </table>
       </div>

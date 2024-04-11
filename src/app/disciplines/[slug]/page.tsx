@@ -18,21 +18,25 @@ async function getData(params: { slug: string }) {
 }
 
 export async function generateStaticParams() {
-    const posts = getDocumentSlugs('content')
-    return posts.map((slug) => ({ slug }))
-  }
+  const posts = getDocumentSlugs("content");
+  return posts.map((slug) => ({ slug }));
+}
 
 export default async function DisciplinePage({
   params,
-}: {
+}: Readonly<{
   params: { slug: string };
-}) {
+}>) {
   const data = await getData(params);
+  console.log("setting: " + data.content);
   return (
-    <div>
+    <div className="h-screen">
       <div>Content for {params.slug}</div>
-      <div>Title: {data.title}</div>
-      <div dangerouslySetInnerHTML={{ __html: data.content }}></div>
+      <h2>Title: {data.title}</h2>
+      <div
+        className="markdown-to-html"
+        dangerouslySetInnerHTML={{ __html: data.content }}
+      ></div>
     </div>
   );
 }

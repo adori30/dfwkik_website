@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="h-full">
+          <TextureBackground>{children}</TextureBackground>{" "}
+        </div>
+      </body>
     </html>
+  );
+}
+
+function TextureBackground({ children }: Readonly<{ children: ReactNode }>) {
+  return (
+    <div className="pattern-cross bg-slate-700 pattern-slate-600 pattern-bg-slate-700 pattern-opacity-100 pattern-size-8">
+      {children}
+    </div>
   );
 }

@@ -24,10 +24,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  height: "100%";
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .markdown-to-html {
+    h2 {
+      @apply text-4xl;
+    }
   }
 }

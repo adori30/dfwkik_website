@@ -15,6 +15,10 @@ const config: Config = {
       },
       fontFamily: {
         'sans': ['Helvetica', 'Arial', 'sans-serif']
+      },
+      colors: {
+        'dfwkikBlue': '#2E2265',
+        'dfwkikYellow': '#F6E513'
       }
     },
   },
