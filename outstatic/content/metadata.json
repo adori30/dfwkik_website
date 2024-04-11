@@ -1,6 +1,6 @@
 {
-  "commit": "5cfdb0856dde2d877570ccf8bf908b541f432329",
-  "generated": "2024-04-10T20:23:29.760Z",
+  "commit": "df1fa4e4e8c5a4409fdb66b49b5f1bce9bb158a6",
+  "generated": "2024-04-11T01:41:07.011Z",
   "metadata": [
     {
       "__outstatic": {
@@ -110,6 +110,24 @@
       "slug": "iaido",
       "status": "published",
       "title": "Iaido"
+    },
+    {
+      "__outstatic": {
+        "commit": "df1fa4e4e8c5a4409fdb66b49b5f1bce9bb158a6",
+        "hash": "2353166714",
+        "path": "outstatic/content/menus/about.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-04-11T01:10:51.963Z",
+      "slug": "about",
+      "status": "draft",
+      "title": "About"
     }
   ]
 }
