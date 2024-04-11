@@ -7,9 +7,9 @@ import NavBar from "./nav-bar";
 export default function HomePage() {
   return (
     <>
-      <HeaderPicture />
-      <NavBar className="absolute left-0 top-8 right-0 m-auto" />
+      <NavBar className="shadow-lg"/>
       <div className="flex flex-col">
+      <HeaderPicture />
         <Header />
         <div className="bg-slate-300 p-12 text-center text-2xl font-thin text-gray-950 md:text-4xl">
           Our disciplines
@@ -27,7 +27,7 @@ export default function HomePage() {
 
 function HeaderPicture() {
   return (
-    <div className="absolute right-0 z-0 h-96 w-full md:-top-60 md:h-[60rem] md:w-[82rem]">
+    <div className="absolute right-0 z-0 h-96 w-full md:-top-12 md:h-[50rem] md:w-[82rem]">
       <Image
         src={"/kamae_clipped.png"}
         fill
@@ -41,19 +41,6 @@ function HeaderPicture() {
 function Header() {
   return (
     <div className="flex h-96 items-center justify-center">
-      <div className="absolute left-4 top-4 flex flex-row items-center md:left-8 md:top-8">
-        <Image
-          src={"/logo_color.png"}
-          width={30}
-          height={30}
-          alt="logo"
-          className="mr-2"
-        />
-        <div className="font-sans font-extralight md:text-2xl">
-          Dallas/Fort Worth Kendo & Iaido Kyokai
-        </div>
-      </div>
-
       <div className="relative z-10 flex h-full flex-col items-center justify-center md:mr-28">
         <div className="mt-auto p-4 text-xl font-light md:mt-0 md:text-3xl">
           Learn the arts of Japanese swordsmanship in DFW
