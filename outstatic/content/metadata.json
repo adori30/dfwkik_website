@@ -1,6 +1,6 @@
 {
-  "commit": "c90348603a4c40e74e621bf0e7b59c3adefae47d",
-  "generated": "2024-04-11T01:41:40.917Z",
+  "commit": "78d975400ef69020e08b7b963a707038f4621b5d",
+  "generated": "2024-04-11T02:39:36.038Z",
   "metadata": [
     {
       "__outstatic": {
@@ -129,6 +129,24 @@
       "slug": "about",
       "status": "published",
       "title": "About"
+    },
+    {
+      "__outstatic": {
+        "commit": "78d975400ef69020e08b7b963a707038f4621b5d",
+        "hash": "1682388755",
+        "path": "outstatic/content/menus/faq.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-04-11T02:09:24.524Z",
+      "slug": "faq",
+      "status": "published",
+      "title": "FAQ"
     }
   ]
 }
