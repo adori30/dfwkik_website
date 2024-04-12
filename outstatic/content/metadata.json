@@ -1,6 +1,6 @@
 {
-  "commit": "a3a06586edb8ba821ac4b2be63cb3f8d6f167f58",
-  "generated": "2024-04-12T18:00:00.296Z",
+  "commit": "aef6addd037024398136d3a21fb06f5d54107d6f",
+  "generated": "2024-04-12T18:00:15.580Z",
   "metadata": [
     {
       "__outstatic": {
@@ -134,7 +134,7 @@
     },
     {
       "__outstatic": {
-        "commit": "a3a06586edb8ba821ac4b2be63cb3f8d6f167f58",
+        "commit": "aef6addd037024398136d3a21fb06f5d54107d6f",
         "hash": "3121998939",
         "path": "outstatic/content/menus/disciplines.md"
       },
