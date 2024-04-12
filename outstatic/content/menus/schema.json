@@ -1,0 +1,13 @@
+{
+  "title": "menus",
+  "type": "object",
+  "properties": {
+    "order": {
+      "required": true,
+      "description": "the priority order in which the menu will be displayed",
+      "fieldType": "Number",
+      "dataType": "number",
+      "title": "order"
+    }
+  }
+}
