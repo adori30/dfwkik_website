@@ -1,6 +1,6 @@
 {
-  "commit": "764c436524f6909a35f402973243b1c8c27b27f8",
-  "generated": "2024-04-12T17:58:14.675Z",
+  "commit": "69c6bcebb4ef8b8a1944ee4227d93e1f776f3019",
+  "generated": "2024-04-12T17:59:27.701Z",
   "metadata": [
     {
       "__outstatic": {
@@ -130,24 +130,6 @@
       "slug": "kendo",
       "status": "published",
       "title": "Kendo"
-    },
-    {
-      "__outstatic": {
-        "commit": "a7471a7931eab0fc293557e2d51b321a5de413f4",
-        "hash": "3953573781",
-        "path": "outstatic/content/menus/blah.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "menus",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-04-12T17:25:44.099Z",
-      "slug": "blah",
-      "status": "draft",
-      "title": "Blah"
     },
     {
       "__outstatic": {
