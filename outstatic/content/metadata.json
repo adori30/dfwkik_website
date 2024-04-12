@@ -1,25 +1,7 @@
 {
-  "commit": "4ed13170e1a4994e3da4a9eea956efe5e30de080",
-  "generated": "2024-04-12T16:41:33.461Z",
+  "commit": "b520f8b70ab65ef757f17d36788e8265a45d140c",
+  "generated": "2024-04-12T16:43:57.299Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "07bc1b8399aea0a57b1641fbe4f34b1af42bacca",
-        "hash": "2500059981",
-        "path": "outstatic/content/content/kendo.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "content",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-04-09T16:26:15.120Z",
-      "slug": "kendo",
-      "status": "published",
-      "title": "Kendo"
-    },
     {
       "__outstatic": {
         "commit": "b21b3c1f41626083a5ca6b37381beaead6e2d14c",
@@ -145,6 +127,24 @@
       "description": "",
       "inMenu": "",
       "publishedAt": "2024-04-10T19:01:08.469Z",
+      "slug": "kendo",
+      "status": "published",
+      "title": "Kendo"
+    },
+    {
+      "__outstatic": {
+        "commit": "b520f8b70ab65ef757f17d36788e8265a45d140c",
+        "hash": "1745316861",
+        "path": "outstatic/content/content/kendo.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "/images/dsc00913-g2ND.jpg",
+      "description": "",
+      "publishedAt": "2024-04-09T16:26:15.120Z",
       "slug": "kendo",
       "status": "published",
       "title": "Kendo"
