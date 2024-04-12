@@ -1,6 +1,6 @@
 {
-  "commit": "aef6addd037024398136d3a21fb06f5d54107d6f",
-  "generated": "2024-04-12T18:00:15.580Z",
+  "commit": "a8428ed0f92360e0fd43b2ec01bc94a78b85b7fa",
+  "generated": "2024-04-12T18:00:41.046Z",
   "metadata": [
     {
       "__outstatic": {
@@ -57,24 +57,6 @@
       "slug": "jodo",
       "status": "published",
       "title": "Jodo"
-    },
-    {
-      "__outstatic": {
-        "commit": "78d975400ef69020e08b7b963a707038f4621b5d",
-        "hash": "1682388755",
-        "path": "outstatic/content/menus/faq.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "menus",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-04-11T02:09:24.524Z",
-      "slug": "faq",
-      "status": "published",
-      "title": "FAQ"
     },
     {
       "__outstatic": {
@@ -150,6 +132,25 @@
       "slug": "disciplines",
       "status": "published",
       "title": "Disciplines"
+    },
+    {
+      "__outstatic": {
+        "commit": "a8428ed0f92360e0fd43b2ec01bc94a78b85b7fa",
+        "hash": "3374473653",
+        "path": "outstatic/content/menus/faq.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "order": "90",
+      "publishedAt": "2024-04-11T02:09:24.524Z",
+      "slug": "faq",
+      "status": "published",
+      "title": "FAQ"
     }
   ]
 }
