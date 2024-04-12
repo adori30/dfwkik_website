@@ -33,14 +33,16 @@ export default async function DisciplinePage({
   const { title, content, coverImage } = await getData(params);
   return (
     <div className="flex h-screen flex-col">
-      <div className="flex flex-row w-full relative">
-        <div className="h-72 content-center w-1/2 z-20 text-7xl font-extralight bg-gradient-to-r from-black via-black/90 to-black/0 pl-8 pt-14">{title}</div>
-        <div className="absolute left-0 z-10 right-0 h-full w-full">{coverImage && (
-          <Image src={coverImage} alt="cover image" fill objectFit="cover" />
-        )}</div>
+      <div className="relative flex w-full flex-row">
+        <div className="z-20 h-72 w-1/2 content-center bg-gradient-to-r from-black via-black/90 to-black/0 pl-8 pt-14 text-7xl font-extralight">
+          {title}
+        </div>
+        <div className="absolute left-0 right-0 z-10 h-full w-full">
+          <Image src={coverImage ? coverImage : "/site_banner.jpg"} alt="cover image" fill objectFit="cover" />
+        </div>
       </div>
       <div
-        className="markdown-to-html flex flex-col flex-grow z-20 relative bg-slate-300 p-10 text-slate-800 md:m-16 md:-mb-16 md:-top-24"
+        className="markdown-to-html relative z-20 flex flex-grow flex-col bg-slate-300 p-10 text-slate-800 md:-top-24 md:m-16 md:-mb-16"
         dangerouslySetInnerHTML={{ __html: content }}
       ></div>
     </div>
