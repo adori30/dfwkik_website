@@ -1,6 +1,6 @@
 {
-  "commit": "a8428ed0f92360e0fd43b2ec01bc94a78b85b7fa",
-  "generated": "2024-04-12T18:00:41.046Z",
+  "commit": "89933ccf02a7f6b4dd450f9891112f4624c83c4e",
+  "generated": "2024-04-12T18:00:51.556Z",
   "metadata": [
     {
       "__outstatic": {
@@ -116,25 +116,6 @@
     },
     {
       "__outstatic": {
-        "commit": "aef6addd037024398136d3a21fb06f5d54107d6f",
-        "hash": "3121998939",
-        "path": "outstatic/content/menus/disciplines.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "menus",
-      "coverImage": "",
-      "description": "",
-      "order": "",
-      "publishedAt": "2024-04-10T19:27:36.957Z",
-      "slug": "disciplines",
-      "status": "published",
-      "title": "Disciplines"
-    },
-    {
-      "__outstatic": {
         "commit": "a8428ed0f92360e0fd43b2ec01bc94a78b85b7fa",
         "hash": "3374473653",
         "path": "outstatic/content/menus/faq.md"
@@ -151,6 +132,25 @@
       "slug": "faq",
       "status": "published",
       "title": "FAQ"
+    },
+    {
+      "__outstatic": {
+        "commit": "89933ccf02a7f6b4dd450f9891112f4624c83c4e",
+        "hash": "3307731289",
+        "path": "outstatic/content/menus/disciplines.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "order": "1",
+      "publishedAt": "2024-04-10T19:27:36.957Z",
+      "slug": "disciplines",
+      "status": "published",
+      "title": "Disciplines"
     }
   ]
 }

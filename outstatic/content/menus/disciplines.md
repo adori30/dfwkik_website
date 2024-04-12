@@ -1,5 +1,5 @@
 ---
-order: ''
+order: '1'
 coverImage: ''
 description: ''
 slug: 'disciplines'
