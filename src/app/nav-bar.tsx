@@ -2,17 +2,18 @@ import { getCollections, getDocumentSlugs, load } from "outstatic/server";
 import NavBarDesktop from "./nav-bar-desktop";
 import Image from "next/image";
 import MobileNavBar from "./nav-bar-mobile";
+import Link from 'next/link'
 
 export default async function NavBar({
   className,
 }: Readonly<{ className?: string }>) {
   const navBarElements = await buildNavBarElements();
   return (
-    <div className={`flex bg-slate-300 text-slate-700 pt-4 pb-4 md:p-0 z-30 relative flex-row justify-between items-center ${className}`}>
+    <div
+      className={`absolute z-30 flex right-0 left-0 flex-row items-center justify-between bg-slate-300 bg-opacity-80 pb-4 pt-4 text-slate-700 md:p-0 ${className}`}
+    >
       <SiteTitle />
-      <div
-        className={`right-0 z-20 hidden text-center text-slate-700 md:flex`}
-      >
+      <div className={`right-0 z-20 hidden text-center text-slate-700 md:flex`}>
         <NavBarDesktop elements={navBarElements} className="text-slate-700" />
       </div>
       <div className="md:hidden">
@@ -24,21 +25,22 @@ export default async function NavBar({
 
 function SiteTitle() {
   return (
-    <div className="flex flex-row items-center md:left-8 md:top-8">
-      <Image
-        src={"/logo_color.png"}
-        width={30}
-        height={30}
-        alt="logo"
-        className="mr-2 ml-4"
-      />
-      <div className="font-sans font-extralight md:text-2xl">
-        Dallas/Fort Worth Kendo & Iaido Kyokai
+    <Link href={"/"}>
+      <div className="flex flex-row items-center md:left-8 md:top-8">
+        <Image
+          src={"/logo_color.png"}
+          width={30}
+          height={30}
+          alt="logo"
+          className="ml-4 mr-2"
+        />
+        <div className="font-sans font-medium md:text-2xl md:font-extralight">
+          Dallas/Fort Worth Kendo & Iaido Kyokai
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
-
 
 async function buildNavBarElements() {
   const collections = getCollections();

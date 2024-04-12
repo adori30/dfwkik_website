@@ -27,15 +27,13 @@ export default async function DisciplinePage({
 }: Readonly<{
   params: { slug: string };
 }>) {
-  const data = await getData(params);
-  console.log("setting: " + data.content);
+  const {title, content} = await getData(params);
   return (
-    <div className="h-screen">
-      <div>Content for {params.slug}</div>
-      <h2>Title: {data.title}</h2>
+    <div className="h-screen p-16 flex flex-col">
+      <div className="text-7xl font-extralight my-16">{title}</div>
       <div
-        className="markdown-to-html"
-        dangerouslySetInnerHTML={{ __html: data.content }}
+        className="markdown-to-html h-full mb-8 bg-slate-300 text-slate-800 p-10"
+        dangerouslySetInnerHTML={{ __html: content }}
       ></div>
     </div>
   );

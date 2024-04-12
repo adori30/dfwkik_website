@@ -7,7 +7,6 @@ import NavBar from "./nav-bar";
 export default function HomePage() {
   return (
     <>
-      <NavBar className="shadow-lg"/>
       <div className="flex flex-col">
       <HeaderPicture />
         <Header />
@@ -27,7 +26,7 @@ export default function HomePage() {
 
 function HeaderPicture() {
   return (
-    <div className="absolute right-0 z-0 h-96 w-full md:-top-12 md:h-[50rem] md:w-[82rem]">
+    <div className="absolute md:-right-28 z-0 h-96 w-full md:-top-24 md:h-[50rem] md:w-[82rem]">
       <Image
         src={"/kamae_clipped.png"}
         fill
