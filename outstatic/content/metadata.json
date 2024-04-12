@@ -1,6 +1,6 @@
 {
-  "commit": "a7471a7931eab0fc293557e2d51b321a5de413f4",
-  "generated": "2024-04-12T17:55:56.714Z",
+  "commit": "764c436524f6909a35f402973243b1c8c27b27f8",
+  "generated": "2024-04-12T17:58:14.675Z",
   "metadata": [
     {
       "__outstatic": {
@@ -78,24 +78,6 @@
     },
     {
       "__outstatic": {
-        "commit": "c90348603a4c40e74e621bf0e7b59c3adefae47d",
-        "hash": "2785683966",
-        "path": "outstatic/content/menus/about.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "menus",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-04-11T01:10:51.963Z",
-      "slug": "about",
-      "status": "published",
-      "title": "About"
-    },
-    {
-      "__outstatic": {
         "commit": "78d975400ef69020e08b7b963a707038f4621b5d",
         "hash": "1682388755",
         "path": "outstatic/content/menus/faq.md"
@@ -166,6 +148,25 @@
       "slug": "blah",
       "status": "draft",
       "title": "Blah"
+    },
+    {
+      "__outstatic": {
+        "commit": "764c436524f6909a35f402973243b1c8c27b27f8",
+        "hash": "2810742294",
+        "path": "outstatic/content/menus/about.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "order": "100",
+      "publishedAt": "2024-04-11T01:10:51.963Z",
+      "slug": "about",
+      "status": "published",
+      "title": "About"
     }
   ]
 }

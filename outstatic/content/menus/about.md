@@ -1,12 +1,13 @@
 ---
-title: 'About'
-status: 'published'
+order: '100'
+coverImage: ''
+description: ''
+slug: 'about'
 author:
   name: ''
   picture: 'https://avatars.githubusercontent.com/u/11914613?v=4'
-slug: 'about'
-description: ''
-coverImage: ''
+status: 'published'
+title: 'About'
 publishedAt: '2024-04-11T01:10:51.963Z'
 ---
 
