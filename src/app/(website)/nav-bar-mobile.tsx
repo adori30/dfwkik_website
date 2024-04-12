@@ -86,7 +86,7 @@ function MenuSection({
         <div
           className={`text-xl transition-all ${isOpen ? "max-h-40" : "invisible max-h-0 text-transparent"}`}
         >
-          {[...section.menuItems, { title: "foo" }, { title: "bar" }].map(
+          {section.menuItems.map(
             (item) => (
               <div
                 key={item.title}

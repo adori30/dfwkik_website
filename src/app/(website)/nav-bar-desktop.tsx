@@ -42,12 +42,7 @@ export default function NavBarDesktop({
                 <div
                   className={`w-28 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
                 >
-                  {[
-                    ...menuItems,
-                    { title: "foo" },
-                    { title: "bar" },
-                    { title: "baz" },
-                  ].map(({ title }) => (
+                  {menuItems.map(({ title }) => (
                     <div
                       key="document"
                       className="cursor-pointer p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10"

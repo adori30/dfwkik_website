@@ -1,8 +1,13 @@
-import { getCollections, getDocumentSlugs, load } from "outstatic/server";
+import {
+  getCollections,
+  getDocumentSlugs,
+  getDocuments,
+  load,
+} from "outstatic/server";
 import NavBarDesktop from "./nav-bar-desktop";
 import Image from "next/image";
 import MobileNavBar from "./nav-bar-mobile";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default async function NavBar({
   className,
@@ -10,7 +15,7 @@ export default async function NavBar({
   const navBarElements = await buildNavBarElements();
   return (
     <div
-      className={`absolute z-30 flex right-0 left-0 flex-row items-center justify-between bg-slate-300 bg-opacity-80 pb-4 pt-4 text-slate-700 md:p-0 ${className}`}
+      className={`absolute left-0 right-0 z-30 flex flex-row items-center justify-between bg-slate-300 bg-opacity-80 pb-4 pt-4 text-slate-700 md:p-0 ${className}`}
     >
       <SiteTitle />
       <div className={`right-0 z-20 hidden text-center text-slate-700 md:flex`}>
@@ -44,25 +49,30 @@ function SiteTitle() {
 
 async function buildNavBarElements() {
   const collections = getCollections();
-  const menus = getDocumentSlugs("menus");
+  const menus = getDocuments("menus", ["title", "order", "slug"]) as unknown as {
+    slug: string,
+    title: string;
+    order: number;
+  }[];
   const db = await load();
 
   return await Promise.all(
-    menus.map(async (menu) => {
-      const allCollectionsQuery = collections.map((collection) => ({
-        collection,
-      }));
-      const items = await db
-        .find(
-          {
-            $or: allCollectionsQuery,
-            $and: [{ inMenu: menu }],
-          },
-          ["title"],
-        )
-        .toArray();
-      const menuCapitalized = menu.charAt(0).toUpperCase() + menu.slice(1);
-      return { menuTitle: menuCapitalized, menuItems: items };
-    }),
+    menus
+      .sort((a, b) => a.order - b.order)
+      .map(async ({title, slug}) => {
+        const allCollectionsQuery = collections.map((collection) => ({
+          collection,
+        }));
+        const items = await db
+          .find(
+            {
+              $or: allCollectionsQuery,
+              $and: [{ inMenu: slug }],
+            },
+            ["title"],
+          )
+          .toArray();
+        return { menuTitle: title, menuItems: items };
+      }),
   );
 }
