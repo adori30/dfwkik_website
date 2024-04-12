@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       <div className="flex flex-col">
-      <HeaderPicture />
+        <HeaderPicture />
         <Header />
         <div className="bg-slate-300 p-12 text-center text-2xl font-thin text-gray-950 md:text-4xl">
           Our disciplines
@@ -26,7 +26,7 @@ export default function HomePage() {
 
 function HeaderPicture() {
   return (
-    <div className="absolute md:-right-28 z-0 h-96 w-full md:-top-24 md:h-[50rem] md:w-[82rem]">
+    <div className="absolute z-0 h-96 w-full md:-right-28 md:-top-24 md:h-[50rem] md:w-[82rem]">
       <Image
         src={"/kamae_clipped.png"}
         fill
@@ -64,16 +64,19 @@ function Disciplines() {
         name="Kendo"
         description="Japanese martial art emphasizing swordsmanship."
         backgroundImg="kendo_pic.jpg"
+        href="kendo"
       />
       <DisciplineTile
         name="Iaido"
         description="Discipline focusing on the art of drawing the sword."
         backgroundImg="iaido_pic.jpg"
+        href="iaido"
       />
       <DisciplineTile
         name={"Jodo"}
         description="Traditional Japanese staff fighting technique."
         backgroundImg="jodo_pic.jpg"
+        href="jodo"
       />
     </div>
   );
@@ -83,22 +86,26 @@ function DisciplineTile({
   name,
   description,
   backgroundImg,
+  href,
 }: Readonly<{
   name: string;
   description: string;
   backgroundImg: string;
+  href: string;
 }>) {
   return (
     <div
       className="relative m-4 h-72 cursor-pointer bg-cover bg-center text-5xl transition-all  md:flex-1 md:hover:pb-28"
       style={{ backgroundImage: `url('/${backgroundImg}')` }}
     >
-      <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:hover:bg-opacity-50 md:hover:pb-28">
-        {name}
-        <div className="absolute mt-28 flex h-full w-full items-center justify-center text-xl opacity-100 transition-all md:opacity-0 md:hover:opacity-100">
-          {description}
+      <Link href={href}>
+        <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:hover:bg-opacity-50 md:hover:pb-28">
+          {name}
+          <div className="absolute mt-28 flex h-full w-full items-center justify-center text-xl opacity-100 transition-all md:opacity-0 md:hover:opacity-100">
+            {description}
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
