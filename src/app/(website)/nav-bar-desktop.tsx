@@ -42,9 +42,8 @@ export default function NavBarDesktop({
                   className={`w-28 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
                 >
                   {menuItems.map(({ title, slug }) => (
-                    <Link href={`/${slug}`}>
+                    <Link key={slug} href={`/${slug}`}>
                       <div
-                        key="document"
                         className="p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10"
                       >
                         {title}
