@@ -8,6 +8,7 @@ slug: 'kendo'
 description: ''
 coverImage: '/images/dsc00913-g2ND.jpg'
 youtubeEmbed: 'Audqa9Oxo1Q'
+inMenu: 'disciplines'
 publishedAt: '2024-04-09T16:26:15.120Z'
 ---
 
