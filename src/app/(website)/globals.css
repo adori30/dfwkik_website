@@ -38,10 +38,19 @@ body {
     display: flex;
 
     h2 {
-      @apply text-4xl;
+      @apply text-4xl font-semibold;
     }
+
+    h3 {
+      @apply text-2xl my-4 font-semibold;
+    }
+
     p {
-      @apply pb-8;
+      @apply mb-4;
+    }
+
+    a {
+      @apply text-blue-700;
     }
 
     iframe {
