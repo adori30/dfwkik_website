@@ -1,25 +1,7 @@
 {
-  "commit": "04e6d5680a8cef8e1e15f9dccf9efcb09ff00bf8",
-  "generated": "2024-04-16T18:34:01.124Z",
+  "commit": "8d0c18fccb5236e6b25f07221170725a858b853b",
+  "generated": "2024-04-16T18:34:12.006Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "b21b3c1f41626083a5ca6b37381beaead6e2d14c",
-        "hash": "1249379238",
-        "path": "outstatic/content/content/iaido.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "content",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-04-09T20:10:03.610Z",
-      "slug": "iaido",
-      "status": "published",
-      "title": "Iaido"
-    },
     {
       "__outstatic": {
         "commit": "764c436524f6909a35f402973243b1c8c27b27f8",
@@ -96,6 +78,25 @@
       "status": "published",
       "title": "Kendo",
       "youtubeEmbed": "Audqa9Oxo1Q"
+    },
+    {
+      "__outstatic": {
+        "commit": "8d0c18fccb5236e6b25f07221170725a858b853b",
+        "hash": "2529458347",
+        "path": "outstatic/content/content/iaido.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "",
+      "description": "",
+      "inMenu": "disciplines",
+      "publishedAt": "2024-04-09T20:10:03.610Z",
+      "slug": "iaido",
+      "status": "published",
+      "title": "Iaido"
     }
   ]
 }
