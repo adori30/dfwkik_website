@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Socials from "./socials";
 
 export default function MobileNavBar({
   className,
@@ -50,6 +51,7 @@ function Menu({
           isOpen={openMenu === element.menuTitle}
         />
       ))}
+      <Socials className="mt-8"/>
     </div>
   );
 }

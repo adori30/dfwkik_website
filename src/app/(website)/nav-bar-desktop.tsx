@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { SocialIcon } from "react-social-icons";
+import Socials from "./socials";
 
 const timeoutLength = 300;
 
@@ -16,7 +18,7 @@ export default function NavBarDesktop({
   className?: string;
 }>) {
   return (
-    <div className={`flex flex-row ${className}`}>
+    <div className={`flex flex-row items-center pr-4 ${className}`}>
       {elements.map(({ menuTitle, menuItems }) => {
         return (
           <div
@@ -43,9 +45,7 @@ export default function NavBarDesktop({
                 >
                   {menuItems.map(({ title, slug }) => (
                     <Link key={slug} href={`/${slug}`}>
-                      <div
-                        className="p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10"
-                      >
+                      <div className="p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10">
                         {title}
                       </div>
                     </Link>
@@ -58,6 +58,7 @@ export default function NavBarDesktop({
           </div>
         );
       })}
+      <Socials />
     </div>
   );
 }
