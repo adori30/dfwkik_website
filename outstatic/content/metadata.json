@@ -1,6 +1,6 @@
 {
-  "commit": "89933ccf02a7f6b4dd450f9891112f4624c83c4e",
-  "generated": "2024-04-12T18:00:51.556Z",
+  "commit": "781438e40bb4c1416d98331fad9e11bb111c8b57",
+  "generated": "2024-04-16T17:26:42.373Z",
   "metadata": [
     {
       "__outstatic": {
@@ -19,63 +19,6 @@
       "slug": "iaido",
       "status": "published",
       "title": "Iaido"
-    },
-    {
-      "__outstatic": {
-        "commit": "5cfdb0856dde2d877570ccf8bf908b541f432329",
-        "hash": "4232095454",
-        "path": "outstatic/content/disciplines/iaido.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "disciplines",
-      "coverImage": "",
-      "description": "",
-      "inMenu": "disciplines",
-      "publishedAt": "2024-04-10T19:01:36.794Z",
-      "slug": "iaido",
-      "status": "published",
-      "title": "Iaido"
-    },
-    {
-      "__outstatic": {
-        "commit": "27b03510c98d6c597452bbd7f33aaaa76d09f529",
-        "hash": "187349374",
-        "path": "outstatic/content/disciplines/jodo.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "disciplines",
-      "coverImage": "",
-      "description": "",
-      "inMenu": "about",
-      "publishedAt": "2024-04-10T19:01:58.085Z",
-      "slug": "jodo",
-      "status": "published",
-      "title": "Jodo"
-    },
-    {
-      "__outstatic": {
-        "commit": "4ed13170e1a4994e3da4a9eea956efe5e30de080",
-        "hash": "3504115283",
-        "path": "outstatic/content/disciplines/kendo.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "disciplines",
-      "coverImage": "/images/dsc00913-U4ND.jpg",
-      "description": "",
-      "inMenu": "",
-      "publishedAt": "2024-04-10T19:01:08.469Z",
-      "slug": "kendo",
-      "status": "published",
-      "title": "Kendo"
     },
     {
       "__outstatic": {
