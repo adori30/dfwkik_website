@@ -69,7 +69,7 @@ async function buildNavBarElements() {
               $or: allCollectionsQuery,
               $and: [{ inMenu: slug }],
             },
-            ["title"],
+            ["title", "slug"],
           )
           .toArray();
         return { menuTitle: title, menuItems: items };

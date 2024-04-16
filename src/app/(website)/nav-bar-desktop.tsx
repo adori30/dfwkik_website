@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 const timeoutLength = 300;
@@ -10,12 +11,10 @@ export default function NavBarDesktop({
 }: Readonly<{
   elements: {
     menuTitle: string;
-    menuItems: { title: string }[];
+    menuItems: { title: string; slug: string }[];
   }[];
   className?: string;
 }>) {
-  const [openMenu, setOpenMenu] = useState<string | undefined>();
-
   return (
     <div className={`flex flex-row ${className}`}>
       {elements.map(({ menuTitle, menuItems }) => {
@@ -42,13 +41,15 @@ export default function NavBarDesktop({
                 <div
                   className={`w-28 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
                 >
-                  {menuItems.map(({ title }) => (
-                    <div
-                      key="document"
-                      className="cursor-pointer p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10"
-                    >
-                      {title}
-                    </div>
+                  {menuItems.map(({ title, slug }) => (
+                    <Link href={`/${slug}`}>
+                      <div
+                        key="document"
+                        className="p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10"
+                      >
+                        {title}
+                      </div>
+                    </Link>
                   ))}
                 </div>
               </div>

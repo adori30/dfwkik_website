@@ -35,8 +35,17 @@ body {
 
 @layer components {
   .markdown-to-html {
+    display: flex;
+
     h2 {
       @apply text-4xl;
+    }
+    p {
+      @apply pb-8;
+    }
+
+    iframe {
+      @apply m-auto aspect-video w-full justify-center md:w-2/3 md:max-w-[600px];
     }
   }
 }

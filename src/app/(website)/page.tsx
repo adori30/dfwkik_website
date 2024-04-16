@@ -26,7 +26,7 @@ export default function HomePage() {
 
 function HeaderPicture() {
   return (
-    <div className="absolute z-0 h-96 w-full md:-right-28 md:-top-24 md:h-[50rem] md:w-[82rem]">
+    <div className="absolute z-0 h-96 w-full min-[1790px]:max-w-[1500px] md:max-w-[1200px] right-0 md:-top-24 md:h-[50rem]">
       <Image
         src={"/kamae_clipped.png"}
         fill

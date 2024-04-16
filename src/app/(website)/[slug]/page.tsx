@@ -17,6 +17,7 @@ async function getData(params: { slug: string }) {
     title: discipline?.title,
     content,
     coverImage: discipline?.coverImage,
+    youtubeEmbed: discipline?.youtubeEmbed,
   };
 }
 
@@ -25,12 +26,24 @@ export async function generateStaticParams() {
   return posts.map((slug) => ({ slug }));
 }
 
+function findAndInjectYoutubeVideos(content: string) {
+  // Regular expression to match the YouTube embed placeholder
+  const youtubeEmbedRegex = /{{youtube_embed:(.*?)}}/g;
+
+  // Replace all YouTube embed placeholders with the corresponding iframe code
+  return content.replace(youtubeEmbedRegex, (match, youtubeId) => {
+    // Generate the iframe code with the extracted YouTube ID
+    return `<iframe src="https://www.youtube.com/embed/${youtubeId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  });
+}
+
 export default async function DisciplinePage({
   params,
 }: Readonly<{
   params: { slug: string };
 }>) {
   const { title, content, coverImage } = await getData(params);
+  const contentWithVideos = findAndInjectYoutubeVideos(content);
   return (
     <div className="flex h-screen flex-col">
       <div className="relative flex w-full flex-row">
@@ -38,13 +51,18 @@ export default async function DisciplinePage({
           {title}
         </div>
         <div className="absolute left-0 right-0 z-10 h-full w-full">
-          <Image src={coverImage ? coverImage : "/site_banner.jpg"} alt="cover image" fill objectFit="cover" />
+          <Image
+            src={coverImage ? coverImage : "/site_banner.jpg"}
+            alt="cover image"
+            fill
+            objectFit="cover"
+          />
         </div>
       </div>
       <div
         className="markdown-to-html relative z-20 flex flex-grow flex-col bg-slate-300 p-10 text-slate-800 md:-top-24 md:m-16 md:-mb-16"
-        dangerouslySetInnerHTML={{ __html: content }}
-      ></div>
+        dangerouslySetInnerHTML={{ __html: contentWithVideos }}
+      />
     </div>
   );
 }
