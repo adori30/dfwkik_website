@@ -17,7 +17,7 @@ export default function NavBarDesktop({
   const [openMenu, setOpenMenu] = useState<string | undefined>();
 
   return (
-    <div className={`flex flex-row text-slate-100 ${className}`}>
+    <div className={`flex flex-row ${className}`}>
       {elements.map(({ menuTitle, menuItems }) => {
         return (
           <div

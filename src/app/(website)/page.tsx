@@ -95,13 +95,13 @@ function DisciplineTile({
 }>) {
   return (
     <div
-      className="relative m-4 h-72 cursor-pointer bg-cover bg-center text-5xl transition-all  md:flex-1 md:hover:pb-28"
+      className="relative m-4 h-72 cursor-pointer bg-cover bg-center text-5xl transition-all md:flex-1 group"
       style={{ backgroundImage: `url('/${backgroundImg}')` }}
     >
       <Link href={href}>
-        <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:hover:bg-opacity-50 md:hover:pb-28">
+        <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:group-hover:bg-opacity-50 md:group-hover:pb-28">
           {name}
-          <div className="absolute mt-28 flex h-full w-full items-center justify-center text-xl opacity-100 transition-all md:opacity-0 md:hover:opacity-100">
+          <div className="absolute mt-28 flex md:group-hover:flex h-full w-full items-center justify-center text-xl opacity-100 md:hidden transition-all md:group-hover:opacity-100">
             {description}
           </div>
         </div>
@@ -152,43 +152,52 @@ function ClassSchedule() {
       <div>Class schedule</div>
       <div className="mt-4 min-w-fit text-lg md:m-8 md:w-1/2 md:text-2xl">
         <table className="w-full font-extralight">
-          <tr>
-            <td className="text-left font-semibold">Tuesday</td>
-            <td className="text-right text-sm md:text-xl">7:15 PM - 9:30 PM</td>
-            <td className="pl-8 text-left text-sm md:text-xl">Iaido</td>
-          </tr>
-          <tr className="border-b-2 border-slate-700">
-            <td colSpan={2} className="text-right align-top text-sm md:text-xl">
-              1st Tuesday of the month
-            </td>
-            <td className="pb-4 pl-8 text-left text-sm md:text-xl">Jodo</td>
-          </tr>
-          <tr className="border-b-2 border-slate-700">
-            <td className="pb-4 pt-4 text-left font-semibold">Thursday</td>
-            <td className="text-right text-sm md:text-xl">7:15 PM - 9:30 PM</td>
-            <td className="pl-8 text-left text-sm md:text-xl">Kendo</td>
-          </tr>
-          <tr>
-            <td className="pt-4 text-left font-semibold">Sunday</td>
-            <td className="pt-4 text-right text-sm md:text-xl">
-              9:15 AM - 10:30 AM
-            </td>
-            <td className="pl-8 pt-4 text-left text-sm md:text-xl">Iaido</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td className="text-right text-sm md:text-xl">
-              10:40 AM - 11:10 AM
-            </td>
-            <td className="pl-8 text-left text-sm md:text-xl">Kendo Kata</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td className="text-right text-sm md:text-xl">
-              11:15 AM - 12:30 PM
-            </td>
-            <td className="pl-8 text-left text-sm md:text-xl">Kendo</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="text-left font-semibold">Tuesday</td>
+              <td className="text-right text-sm md:text-xl">
+                7:15 PM - 9:30 PM
+              </td>
+              <td className="pl-8 text-left text-sm md:text-xl">Iaido</td>
+            </tr>
+            <tr className="border-b-2 border-slate-700">
+              <td
+                colSpan={2}
+                className="text-right align-top text-sm md:text-xl"
+              >
+                1st Tuesday of the month
+              </td>
+              <td className="pb-4 pl-8 text-left text-sm md:text-xl">Jodo</td>
+            </tr>
+            <tr className="border-b-2 border-slate-700">
+              <td className="pb-4 pt-4 text-left font-semibold">Thursday</td>
+              <td className="text-right text-sm md:text-xl">
+                7:15 PM - 9:30 PM
+              </td>
+              <td className="pl-8 text-left text-sm md:text-xl">Kendo</td>
+            </tr>
+            <tr>
+              <td className="pt-4 text-left font-semibold">Sunday</td>
+              <td className="pt-4 text-right text-sm md:text-xl">
+                9:15 AM - 10:30 AM
+              </td>
+              <td className="pl-8 pt-4 text-left text-sm md:text-xl">Iaido</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td className="text-right text-sm md:text-xl">
+                10:40 AM - 11:10 AM
+              </td>
+              <td className="pl-8 text-left text-sm md:text-xl">Kendo Kata</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td className="text-right text-sm md:text-xl">
+                11:15 AM - 12:30 PM
+              </td>
+              <td className="pl-8 text-left text-sm md:text-xl">Kendo</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

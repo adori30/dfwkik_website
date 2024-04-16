@@ -15,11 +15,11 @@ export default async function NavBar({
   const navBarElements = await buildNavBarElements();
   return (
     <div
-      className={`absolute left-0 right-0 z-30 flex flex-row items-center justify-between bg-slate-300 bg-opacity-80 pb-4 pt-4 text-slate-700 md:p-0 ${className}`}
+      className={`text-slate-900 absolute left-0 right-0 z-30 flex flex-row items-center justify-between bg-slate-300 bg-opacity-80 pb-4 pt-4 md:p-0 ${className}`}
     >
       <SiteTitle />
-      <div className={`right-0 z-20 hidden text-center text-slate-700 md:flex`}>
-        <NavBarDesktop elements={navBarElements} className="text-slate-700" />
+      <div className={`right-0 z-20 hidden text-center md:flex`}>
+        <NavBarDesktop elements={navBarElements} />
       </div>
       <div className="md:hidden">
         <MobileNavBar elements={navBarElements} />
