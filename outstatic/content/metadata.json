@@ -1,6 +1,6 @@
 {
   "commit": "8d0c18fccb5236e6b25f07221170725a858b853b",
-  "generated": "2024-04-16T18:34:12.006Z",
+  "generated": "2024-04-16T18:39:26.635Z",
   "metadata": [
     {
       "__outstatic": {
@@ -82,7 +82,7 @@
     {
       "__outstatic": {
         "commit": "8d0c18fccb5236e6b25f07221170725a858b853b",
-        "hash": "2529458347",
+        "hash": "977431443",
         "path": "outstatic/content/content/iaido.md"
       },
       "author": {
@@ -90,7 +90,7 @@
         "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
       },
       "collection": "content",
-      "coverImage": "",
+      "coverImage": "/images/dsc00595-MyND.jpg",
       "description": "",
       "inMenu": "disciplines",
       "publishedAt": "2024-04-09T20:10:03.610Z",
