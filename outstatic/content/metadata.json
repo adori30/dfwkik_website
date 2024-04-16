@@ -1,6 +1,6 @@
 {
   "commit": "b6a4eeb2c5820633a02ffdb9ef73186b562ae1c8",
-  "generated": "2024-04-16T18:11:56.287Z",
+  "generated": "2024-04-16T18:12:47.442Z",
   "metadata": [
     {
       "__outstatic": {
@@ -80,7 +80,7 @@
     {
       "__outstatic": {
         "commit": "b6a4eeb2c5820633a02ffdb9ef73186b562ae1c8",
-        "hash": "2784871072",
+        "hash": "1516153787",
         "path": "outstatic/content/content/kendo.md"
       },
       "author": {
