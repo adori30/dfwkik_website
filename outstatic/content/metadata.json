@@ -1,6 +1,6 @@
 {
-  "commit": "94da8f5cdc5b31f90ae3c04a585cf402e879b976",
-  "generated": "2024-04-16T21:08:48.701Z",
+  "commit": "53fec73418c4da040da7f2ba28861293db2b1e3e",
+  "generated": "2024-04-16T21:09:53.761Z",
   "metadata": [
     {
       "__outstatic": {
@@ -78,6 +78,25 @@
       "slug": "iaido",
       "status": "published",
       "title": "Iaido"
+    },
+    {
+      "__outstatic": {
+        "commit": "53fec73418c4da040da7f2ba28861293db2b1e3e",
+        "hash": "2417217459",
+        "path": "outstatic/content/content/faq.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "",
+      "description": "",
+      "inMenu": "about",
+      "publishedAt": "2024-04-16T20:38:54.221Z",
+      "slug": "faq",
+      "status": "published",
+      "title": "FAQ"
     }
   ]
 }
