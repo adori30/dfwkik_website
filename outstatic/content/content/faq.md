@@ -63,10 +63,10 @@ If you will be in town for a longer period of time (over a month), we ask that y
 
 If your dojo is not part of an AUSKF/IKF federation, we ask that you also pay our initiation fee and submit new membership forms.
 
-## I accidentally paid for extra equipment or dues by accident! Can I get a refund?
+### I accidentally paid for extra equipment or dues by accident! Can I get a refund?
 
 Yes! Please contact our **Treasurer** (See [contact ](https://www.dfwkik.org/dallas/contact-us/)for details) and we will happily refund you.
 
-## What style of Iaido do you practice?
+### What style of Iaido do you practice?
 
 While we focus on the Zen Nihon Kendo Renmei Seitei kata set , we practice the [Musō Shinden-ryū](https://en.wikipedia.org/wiki/Mus%C5%8D_Shinden-ry%C5%AB) style of iaido.
