@@ -33,7 +33,7 @@ export default function RootLayout({
 
 function TextureBackground({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <div className="pattern-cross bg-slate-700 pattern-slate-600 pattern-bg-slate-700 pattern-opacity-100 pattern-size-8">
+    <div className="pattern-cross bg-slate-700 text-white pattern-slate-600 pattern-bg-slate-700 pattern-opacity-100 pattern-size-8">
       {children}
     </div>
   );

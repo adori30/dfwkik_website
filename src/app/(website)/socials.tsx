@@ -1,6 +1,8 @@
 import { SocialIcon } from "react-social-icons";
 
-export default function Socials({className}: Readonly<{className?: string}>) {
+export default function Socials({
+  className,
+}: Readonly<{ className?: string }>) {
   return (
     <div className={`flex flex-row justify-center ${className}`}>
       <SocialIcon

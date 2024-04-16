@@ -15,7 +15,7 @@ export default async function NavBar({
   const navBarElements = await buildNavBarElements();
   return (
     <div
-      className={`text-slate-900 absolute left-0 right-0 z-30 flex flex-row items-center justify-between bg-slate-300 bg-opacity-80 md:py-4 md:p-0 ${className}`}
+      className={`text-slate-900 absolute left-0 right-0 z-30 flex flex-row items-center justify-between bg-slate-300 bg-opacity-80 ${className}`}
     >
       <SiteTitle />
       <div className={`right-0 z-20 hidden text-center md:flex`}>
