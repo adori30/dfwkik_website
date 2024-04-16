@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/11914613?v=4'
 slug: 'iaido'
 description: ''
-coverImage: '/images/dsc00595-MyND.jpg'
+coverImage: '/images/dsc00595-EyOT.jpg'
 inMenu: 'disciplines'
 publishedAt: '2024-04-09T20:10:03.610Z'
 ---
