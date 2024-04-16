@@ -1,13 +1,5 @@
 {
   "title": "content",
   "type": "object",
-  "properties": {
-    "youtubeEmbed": {
-      "required": false,
-      "description": "the youtube video idea you want to embed at the end of the article (ie. Audqa9Oxo1Q)",
-      "fieldType": "String",
-      "dataType": "string",
-      "title": "youtube embed"
-    }
-  }
+  "properties": {}
 }
