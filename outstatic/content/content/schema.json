@@ -1,5 +1,13 @@
 {
   "title": "content",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "inMenu": {
+      "required": false,
+      "description": "the lowercase slug of the menu this article needs to be in (ie. \"disciplines\")",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "In menu"
+    }
+  }
 }
