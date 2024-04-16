@@ -126,7 +126,7 @@ function HamburgerIcon({
   const ifOpen = (className: string) => (isOpen ? className : "");
 
   return (
-    <div className={`${ifOpen("fixed right-0 top-4")} ${className}`}>
+    <div className={`${ifOpen("fixed right-0 top-0")} ${className}`}>
       <button className="group relative" onClick={handleClick}>
         <div className="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full transition-all duration-200">
           <div className="flex h-[20px] w-[20px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">

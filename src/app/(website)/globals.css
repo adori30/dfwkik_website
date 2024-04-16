@@ -54,7 +54,7 @@ body {
     }
 
     iframe {
-      @apply m-auto aspect-video w-full justify-center md:w-2/3 md:max-w-[600px];
+      @apply m-auto aspect-video w-full justify-center md:w-2/3 md:max-w-[600px] my-4 md:my-8;
     }
   }
 }
