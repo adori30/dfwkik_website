@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Socials from "./socials";
+import Link from "next/link";
 
 export default function MobileNavBar({
   className,
@@ -10,40 +11,46 @@ export default function MobileNavBar({
   className?: string;
   elements: {
     menuTitle: string;
-    menuItems: { title: string }[];
+    menuItems: { title: string, slug: string }[];
   }[];
 }>) {
-  const [menuOpen, setMenuOpen] = useState<Boolean>(false);
-  const ifOpen = (className: string) => (menuOpen ? className : "");
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
     <div className={`${className}`}>
       <div
         className={`w-screen bg-slate-300 ${menuOpen ? "visible h-full" : "invisible h-0"} fixed left-0 top-0 flex items-center justify-center transition-all`}
       >
-        <Menu elements={elements} />
+        <Menu elements={elements} onItemClick={() => setMenuOpen(false)} />
       </div>
-      <HamburgerIcon onClick={() => setMenuOpen(!menuOpen)} />
+      <HamburgerIcon onClick={() => setMenuOpen(!menuOpen)} isOpen={menuOpen} />
     </div>
   );
 }
 
 function Menu({
   elements,
+  onItemClick
 }: Readonly<{
   elements: {
     menuTitle: string;
-    menuItems: { title: string }[];
+    menuItems: { title: string, slug: string }[];
   }[];
+  onItemClick: () => void;
 }>) {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const handleOnItemClick = () => {
+    setOpenMenu(null);
+    onItemClick();
+  }
   return (
     <div className="text-slate-700">
       {elements.map((element) => (
         <MenuSection
           key={element.menuTitle}
           section={element}
-          onClick={() =>
+          onItemClick={handleOnItemClick}
+          onSectionClick={() =>
             openMenu === element.menuTitle
               ? setOpenMenu(null)
               : setOpenMenu(element.menuTitle)
@@ -51,7 +58,7 @@ function Menu({
           isOpen={openMenu === element.menuTitle}
         />
       ))}
-      <Socials className="mt-8"/>
+      <Socials className="mt-8" />
     </div>
   );
 }
@@ -59,14 +66,16 @@ function Menu({
 function MenuSection({
   section,
   isOpen,
-  onClick,
+  onSectionClick,
+  onItemClick,
 }: Readonly<{
   section: {
     menuTitle: string;
-    menuItems: { title: string }[];
+    menuItems: { title: string; slug: string }[];
   };
   isOpen: boolean;
-  onClick: () => void;
+  onSectionClick: () => void;
+  onItemClick: () => void;
 }>) {
   const hasChildren = section.menuItems.length > 0;
   const ifOpen = (className: string) => (isOpen ? className : "");
@@ -75,7 +84,7 @@ function MenuSection({
     <div className="flex flex-col font-extralight">
       <div
         className="flex cursor-pointer flex-row items-center p-2 text-2xl"
-        onClick={onClick}
+        onClick={onSectionClick}
       >
         {section.menuTitle}
         <span
@@ -88,16 +97,13 @@ function MenuSection({
         <div
           className={`text-xl transition-all ${isOpen ? "max-h-40" : "invisible max-h-0 text-transparent"}`}
         >
-          {section.menuItems.map(
-            (item) => (
-              <div
-                key={item.title}
-                className="cursor-pointer p-2 hover:font-semibold"
-              >
-                {item.title}
+          {section.menuItems.map(({ title, slug }) => (
+            <Link key={title} href={`/${slug}`} onClick={onItemClick}>
+              <div key={title} className="cursor-pointer p-2">
+                {title}
               </div>
-            ),
-          )}
+            </Link>
+          ))}
         </div>
       )}
     </div>
@@ -106,14 +112,14 @@ function MenuSection({
 
 function HamburgerIcon({
   onClick,
+  isOpen,
   className,
 }: {
   onClick: () => void;
   className?: string;
+  isOpen: boolean
 }) {
-  const [isOpen, setIsOpen] = useState<Boolean>(false);
   const handleClick = () => {
-    setIsOpen(!isOpen);
     onClick();
   };
 
