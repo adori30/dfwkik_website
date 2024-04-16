@@ -1,6 +1,6 @@
 {
-  "commit": "2775648fa4845629032c431a6603b9aa1e812acf",
-  "generated": "2024-04-16T17:48:44.740Z",
+  "commit": "67761cf172e808b57cc5154d5e4bf3d0e35d6380",
+  "generated": "2024-04-16T17:49:38.655Z",
   "metadata": [
     {
       "__outstatic": {
@@ -79,8 +79,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2775648fa4845629032c431a6603b9aa1e812acf",
-        "hash": "335419523",
+        "commit": "67761cf172e808b57cc5154d5e4bf3d0e35d6380",
+        "hash": "12790665",
         "path": "outstatic/content/content/kendo.md"
       },
       "author": {
@@ -93,7 +93,8 @@
       "publishedAt": "2024-04-09T16:26:15.120Z",
       "slug": "kendo",
       "status": "published",
-      "title": "Kendo"
+      "title": "Kendo",
+      "youtubeEmbed": "Audqa9Oxo1Q"
     }
   ]
 }
