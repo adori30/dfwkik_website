@@ -15,4 +15,4 @@ Kendo (剣道), or "the path of the sword", is a centuries-old Japanese martial 
 
 At DFWKIK, you'll be able to learn with some of the best instructors in Texas. With many years of experience teaching Kendo, they'll teach you from the very basics, no matter your age or previous martial arts experience.
 
-{{youtube_embed}}
+{{youtube_embed:Audqa9Oxo1Q}}
