@@ -1,6 +1,6 @@
 {
-  "commit": "27181e3fcade781be8ba9cde4d2e508bda2784a7",
-  "generated": "2024-04-17T15:38:35.714Z",
+  "commit": "439445129ee0eaae69433dfe2f5ee09df4f9fd8d",
+  "generated": "2024-04-17T15:40:01.419Z",
   "metadata": [
     {
       "__outstatic": {
@@ -138,8 +138,8 @@
     },
     {
       "__outstatic": {
-        "commit": "27181e3fcade781be8ba9cde4d2e508bda2784a7",
-        "hash": "3911221439",
+        "commit": "439445129ee0eaae69433dfe2f5ee09df4f9fd8d",
+        "hash": "3294856648",
         "path": "outstatic/content/content/philosophy.md"
       },
       "author": {
@@ -147,7 +147,7 @@
         "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
       },
       "collection": "content",
-      "coverImage": "",
+      "coverImage": "/images/dsc00900-UxNT.jpg",
       "description": "",
       "inMenu": "the-dojo",
       "publishedAt": "2024-04-17T15:07:27.334Z",

@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/11914613?v=4'
 slug: 'philosophy'
 description: ''
-coverImage: ''
+coverImage: '/images/dsc00900-UxNT.jpg'
 inMenu: 'the-dojo'
 publishedAt: '2024-04-17T15:07:27.334Z'
 ---
