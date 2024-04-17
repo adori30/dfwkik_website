@@ -1,6 +1,6 @@
 {
-  "commit": "3c47cb9de20273d5547d754a121f8094a8ea2997",
-  "generated": "2024-04-17T15:37:03.764Z",
+  "commit": "27181e3fcade781be8ba9cde4d2e508bda2784a7",
+  "generated": "2024-04-17T15:38:35.714Z",
   "metadata": [
     {
       "__outstatic": {
@@ -135,6 +135,25 @@
       "slug": "mission",
       "status": "published",
       "title": "Mission"
+    },
+    {
+      "__outstatic": {
+        "commit": "27181e3fcade781be8ba9cde4d2e508bda2784a7",
+        "hash": "3911221439",
+        "path": "outstatic/content/content/philosophy.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "",
+      "description": "",
+      "inMenu": "the-dojo",
+      "publishedAt": "2024-04-17T15:07:27.334Z",
+      "slug": "philosophy",
+      "status": "published",
+      "title": "Philosophy"
     }
   ]
 }
