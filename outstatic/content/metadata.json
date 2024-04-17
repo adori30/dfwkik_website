@@ -1,6 +1,6 @@
 {
-  "commit": "626bc4704ed771aba1c2d25eb1139f8008ef061c",
-  "generated": "2024-04-16T21:40:42.585Z",
+  "commit": "8781d2b592d785b9bd97991c9a760e6c5ac819f1",
+  "generated": "2024-04-17T15:33:57.622Z",
   "metadata": [
     {
       "__outstatic": {
@@ -97,6 +97,25 @@
       "slug": "faq",
       "status": "published",
       "title": "FAQ"
+    },
+    {
+      "__outstatic": {
+        "commit": "8781d2b592d785b9bd97991c9a760e6c5ac819f1",
+        "hash": "1867646447",
+        "path": "outstatic/content/menus/the-dojo.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "menus",
+      "coverImage": "",
+      "description": "",
+      "order": "20",
+      "publishedAt": "2024-04-17T15:03:21.967Z",
+      "slug": "the-dojo",
+      "status": "published",
+      "title": "The Dojo"
     }
   ]
 }
