@@ -1,4 +1,4 @@
-import markdownToHtml from "@/lib/markdown-to-html";
+import { markdownToHtml } from "@/lib/markdown-to-html";
 import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
 import Image from "next/image";
 
@@ -31,9 +31,9 @@ function findAndInjectYoutubeVideos(content: string) {
   const youtubeEmbedRegex = /{{youtube_embed:(.*?)}}/g;
 
   // Replace all YouTube embed placeholders with the corresponding iframe code
-  return content.replace(youtubeEmbedRegex, (match, youtubeId) => {
+  return content.replace(youtubeEmbedRegex, (_match, youtubeId) => {
     // Generate the iframe code with the extracted YouTube ID
-    return `<iframe src="https://www.youtube.com/embed/${youtubeId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    return `<iframe src="https://www.youtube.com/embed/${youtubeId}" data-testid="youtube_iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   });
 }
 
