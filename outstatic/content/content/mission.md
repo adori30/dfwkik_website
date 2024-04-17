@@ -11,6 +11,8 @@ inMenu: 'the-dojo'
 publishedAt: '2024-04-17T15:04:02.211Z'
 ---
 
+{{youtube_embed:bx2nnboYU0}}
+
 In 1996, the Dallas/Fort Worth Kendo & Iaido Kyokai was incorporated as a non-profit organization in the state of Texas to:
 
 - Educate the public about Japanese martial arts and culture

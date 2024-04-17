@@ -1,6 +1,6 @@
 {
-  "commit": "439445129ee0eaae69433dfe2f5ee09df4f9fd8d",
-  "generated": "2024-04-17T15:40:01.419Z",
+  "commit": "e47428f318ed4b6bc5736ac0ab7560eafcd8f409",
+  "generated": "2024-04-17T19:44:50.450Z",
   "metadata": [
     {
       "__outstatic": {
@@ -119,25 +119,6 @@
     },
     {
       "__outstatic": {
-        "commit": "3c47cb9de20273d5547d754a121f8094a8ea2997",
-        "hash": "1797151057",
-        "path": "outstatic/content/content/mission.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "content",
-      "coverImage": "/images/dsc00770-QxOT.jpg",
-      "description": "",
-      "inMenu": "the-dojo",
-      "publishedAt": "2024-04-17T15:04:02.211Z",
-      "slug": "mission",
-      "status": "published",
-      "title": "Mission"
-    },
-    {
-      "__outstatic": {
         "commit": "439445129ee0eaae69433dfe2f5ee09df4f9fd8d",
         "hash": "3294856648",
         "path": "outstatic/content/content/philosophy.md"
@@ -154,6 +135,25 @@
       "slug": "philosophy",
       "status": "published",
       "title": "Philosophy"
+    },
+    {
+      "__outstatic": {
+        "commit": "e47428f318ed4b6bc5736ac0ab7560eafcd8f409",
+        "hash": "2757944788",
+        "path": "outstatic/content/content/mission.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "/images/dsc00770-QxOT.jpg",
+      "description": "",
+      "inMenu": "the-dojo",
+      "publishedAt": "2024-04-17T15:04:02.211Z",
+      "slug": "mission",
+      "status": "published",
+      "title": "Mission"
     }
   ]
 }
