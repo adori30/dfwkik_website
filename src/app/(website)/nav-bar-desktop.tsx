@@ -39,9 +39,9 @@ export default function NavBarDesktop({
           >
             {menuTitle}
             {menuItems.length > 0 ? (
-              <div className="invisible absolute left-0 top-10 z-20 flex  pt-8 transition-all group-hover:visible group-hover:top-12">
+              <div className="invisible absolute left-0 top-10 z-20 flex pt-4 transition-all group-hover:visible group-hover:top-12">
                 <div
-                  className={`w-28 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
+                  className={`w-32 -ml-2 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
                 >
                   {menuItems.map(({ title, slug }) => (
                     <Link key={slug} href={`/${slug}`}>

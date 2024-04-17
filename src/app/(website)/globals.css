@@ -53,6 +53,17 @@ body {
       @apply text-blue-700;
     }
 
+    ul {
+      @apply list-disc ml-8;
+      li {
+        @apply mb-4;
+      }
+    }
+
+    img {
+      @apply m-auto;
+    }
+
     iframe {
       @apply m-auto aspect-video w-full justify-center md:w-2/3 md:max-w-[600px] my-4 md:my-8;
     }
