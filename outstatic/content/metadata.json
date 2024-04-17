@@ -1,6 +1,6 @@
 {
   "commit": "e47428f318ed4b6bc5736ac0ab7560eafcd8f409",
-  "generated": "2024-04-17T19:44:50.450Z",
+  "generated": "2024-04-17T19:46:34.917Z",
   "metadata": [
     {
       "__outstatic": {
@@ -139,7 +139,7 @@
     {
       "__outstatic": {
         "commit": "e47428f318ed4b6bc5736ac0ab7560eafcd8f409",
-        "hash": "2757944788",
+        "hash": "2792465563",
         "path": "outstatic/content/content/mission.md"
       },
       "author": {
