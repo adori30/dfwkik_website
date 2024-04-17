@@ -1,6 +1,6 @@
 {
-  "commit": "8781d2b592d785b9bd97991c9a760e6c5ac819f1",
-  "generated": "2024-04-17T15:33:57.622Z",
+  "commit": "3c47cb9de20273d5547d754a121f8094a8ea2997",
+  "generated": "2024-04-17T15:37:03.764Z",
   "metadata": [
     {
       "__outstatic": {
@@ -116,6 +116,25 @@
       "slug": "the-dojo",
       "status": "published",
       "title": "The Dojo"
+    },
+    {
+      "__outstatic": {
+        "commit": "3c47cb9de20273d5547d754a121f8094a8ea2997",
+        "hash": "1797151057",
+        "path": "outstatic/content/content/mission.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "/images/dsc00770-QxOT.jpg",
+      "description": "",
+      "inMenu": "the-dojo",
+      "publishedAt": "2024-04-17T15:04:02.211Z",
+      "slug": "mission",
+      "status": "published",
+      "title": "Mission"
     }
   ]
 }
