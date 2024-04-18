@@ -26,13 +26,23 @@ export default function HomePage() {
 
 function HeaderPicture() {
   return (
-    <div className="absolute z-0 h-96 w-full min-[1790px]:max-w-[1500px] md:max-w-[1200px] right-0 md:-top-24 md:h-[50rem]">
-      <Image
-        src={"/kamae_clipped.png"}
-        fill
-        objectFit="cover"
-        alt="picture of a kendoka"
-      />
+    <div>
+      {/* <div className="absolute right-72 z-0 h-96 w-full md:-top-5 md:h-[40rem] md:max-w-[1200px] min-[1790px]:max-w-[800px]">
+        <Image
+          src={"/iaido_clipped.png"}
+          fill
+          objectFit="cover"
+          alt="picture of a kendoka"
+        />
+      </div> */}
+      <div className="absolute right-0 z-0 h-96 w-full md:-top-24 md:h-[50rem] md:max-w-[1200px] min-[1790px]:max-w-[1500px]">
+        <Image
+          src={"/kamae_clipped.png"}
+          fill
+          objectFit="cover"
+          alt="picture of a kendoka"
+        />
+      </div>
     </div>
   );
 }
@@ -48,7 +58,7 @@ function Header() {
           Established 1976
         </div>
         <HeaderButton className="mb-8 md:mb-0">
-          <Link href="https://www.dfwkik.org/dallas/membership/">
+          <Link href="/join-us">
             Join us now
           </Link>
         </HeaderButton>
@@ -95,13 +105,13 @@ function DisciplineTile({
 }>) {
   return (
     <div
-      className="relative m-4 h-72 cursor-pointer bg-cover bg-center text-5xl transition-all md:flex-1 group"
+      className="group relative m-4 h-72 cursor-pointer bg-cover bg-center text-5xl transition-all md:flex-1"
       style={{ backgroundImage: `url('/${backgroundImg}')` }}
     >
       <Link href={href}>
         <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:group-hover:bg-opacity-50 md:group-hover:pb-28">
           {name}
-          <div className="absolute mt-28 flex md:group-hover:flex h-full w-full items-center justify-center text-xl opacity-100 md:hidden transition-all md:group-hover:opacity-100">
+          <div className="absolute mt-28 flex h-full w-full items-center justify-center text-xl opacity-100 transition-all md:hidden md:group-hover:flex md:group-hover:opacity-100">
             {description}
           </div>
         </div>
