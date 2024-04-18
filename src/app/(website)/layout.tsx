@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import "./globalicons.css";
 import { ReactNode } from "react";
 import NavBar from "./nav-bar";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "DFWKIK",
@@ -19,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <div className="h-full">
           <TextureBackground>
             <NavBar className="shadow-lg" />
