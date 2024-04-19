@@ -51,7 +51,7 @@ function Header() {
   return (
     <div className="flex h-96 md:mt-12 items-center justify-center">
       <div className="relative z-10 flex h-full flex-col items-center justify-center md:mr-28">
-        <div className="mt-auto p-4 text-xl font-light md:mt-0 md:text-3xl">
+        <div className="mt-auto p-4 text-xl font-light md:mt-0 lg:text-5xl md:text-3xl">
           Learn the arts of Japanese swordsmanship in DFW
         </div>
         <div className="mb-auto self-start pl-4 font-thin md:mb-0 md:text-xl">
