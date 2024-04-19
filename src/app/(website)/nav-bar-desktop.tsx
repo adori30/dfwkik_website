@@ -46,7 +46,7 @@ export default function NavBarDesktop({
                 >
                   {menuItems.map(({ title, slug }) => (
                     <Link key={slug} href={`/${slug}`}>
-                      <div className="p-2 first:rounded-t last:rounded-b hover:bg-slate-700 hover:bg-opacity-10">
+                      <div className="p-2 hover:bg-slate-700 hover:bg-opacity-10">
                         {title}
                       </div>
                     </Link>
