@@ -49,7 +49,7 @@ function HeaderPicture() {
 
 function Header() {
   return (
-    <div className="flex h-96 items-center justify-center">
+    <div className="flex h-96 md:mt-12 items-center justify-center">
       <div className="relative z-10 flex h-full flex-col items-center justify-center md:mr-28">
         <div className="mt-auto p-4 text-xl font-light md:mt-0 md:text-3xl">
           Learn the arts of Japanese swordsmanship in DFW
@@ -109,7 +109,7 @@ function DisciplineTile({
       style={{ backgroundImage: `url('/${backgroundImg}')` }}
     >
       <Link href={href}>
-        <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:group-hover:bg-opacity-50 md:group-hover:pb-28">
+        <div className="absolute z-10 flex h-full w-full flex-col content-center items-center justify-center text-center transition-all md:hover:bg-black md:group-hover:bg-opacity-50 md:group-hover:pb-16">
           {name}
           <div className="absolute mt-28 flex h-full w-full items-center justify-center text-xl opacity-100 transition-all md:hidden md:group-hover:flex md:group-hover:opacity-100">
             {description}

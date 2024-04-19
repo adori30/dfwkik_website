@@ -47,7 +47,7 @@ export default async function ContentPage({
   return (
     <div className="flex h-full min-h-screen flex-col">
       <div className="relative flex w-full flex-row">
-        <div className="z-20 h-72 w-1/2 content-center bg-gradient-to-r from-black via-black/90 to-black/0 pl-8 pt-14 text-7xl font-extralight">
+        <div className="z-20 h-80 w-1/2 content-center bg-gradient-to-r from-black via-black/90 to-black/0 pl-8 pt-14 text-7xl font-extralight">
           {title}
         </div>
         <div className="absolute left-0 right-0 z-10 h-full w-full">

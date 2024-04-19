@@ -39,7 +39,7 @@ function SiteTitle() {
           alt="logo"
           className="ml-4 mr-2"
         />
-        <div className="font-sans font-medium md:text-2xl md:font-extralight">
+        <div className="font-sans font-medium md:text-2xl">
           Dallas/Fort Worth Kendo & Iaido Kyokai
         </div>
       </div>

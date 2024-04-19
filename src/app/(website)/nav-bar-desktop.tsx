@@ -32,6 +32,7 @@ export default function NavBarDesktop({
             items-center
             justify-center
             p-4
+            h-20
             last:border-r-0
             hover:bg-slate-700
             hover:bg-opacity-10
@@ -39,7 +40,7 @@ export default function NavBarDesktop({
           >
             {menuTitle}
             {menuItems.length > 0 ? (
-              <div className="invisible absolute left-0 top-10 z-20 flex pt-4 transition-all group-hover:visible group-hover:top-12">
+              <div className="invisible absolute left-0 top-10 z-20 flex pt-10 transition-all group-hover:visible group-hover:top-12">
                 <div
                   className={`w-32 -ml-2 flex-col rounded bg-slate-300 text-slate-900 shadow-lg`}
                 >
