@@ -1,5 +1,5 @@
 import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
-import DisciplinePage from "./page";
+import ContentPage from "./page";
 import { render, fireEvent, screen } from "@testing-library/react";
 import { markdownToHtml } from "@/lib/markdown-to-html";
 
@@ -21,7 +21,7 @@ it("renders replacing youtube video placeholders", async () => {
   });
   markdownToHtmlStub.mockResolvedValue("<div>{{youtube_embed:1234ABCD}}</div>");
 
-  const serverComponent = await DisciplinePage({
+  const serverComponent = await ContentPage({
     params: { slug: "dummy_slug" },
   });
 

@@ -37,7 +37,7 @@ function findAndInjectYoutubeVideos(content: string) {
   });
 }
 
-export default async function DisciplinePage({
+export default async function ContentPage({
   params,
 }: Readonly<{
   params: { slug: string };

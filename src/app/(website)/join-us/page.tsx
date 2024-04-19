@@ -3,13 +3,15 @@ import Image from "next/image";
 export default function JoinUs() {
   return (
     <div className="flex h-full min-h-screen flex-col">
-      <div className="flex flex-col md:flex-row items-center pt-14">
-        <div className="md:ml-12 flex flex-1 flex-col p-4 md:p-0">
-          <div className="mb-8 text-2xl md:text-4xl font-extralight">
+      <div className="flex flex-col items-center pt-14 md:flex-row">
+        <div className="flex flex-1 flex-col p-4 md:ml-12 md:p-0">
+          <div className="mb-8 text-2xl font-extralight md:text-4xl">
             Take the first step
           </div>
-          <div className="text-4xl md:text-8xl font-semibold">COME WATCH A CLASS.</div>
-          <div className="mt-8 text-xl md:text-2xl font-extralight">
+          <div className="text-4xl font-semibold md:text-8xl">
+            COME WATCH A CLASS.
+          </div>
+          <div className="mt-8 text-xl font-extralight md:text-2xl">
             If you like what you see you can join us the very next class!
           </div>
         </div>
@@ -23,14 +25,14 @@ export default function JoinUs() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center bg-slate-300 py-32 text-5xl md:text-7xl font-semibold text-slate-900">
+      <div className="md:px-0 px-4 text-center flex flex-col items-center justify-center bg-slate-300 py-32 text-5xl font-semibold text-slate-900 md:text-7xl">
         <div className="font-light">ONE FLAT</div>
         <div className="mb-8 font-light">MONTHLY RATE.</div>
         <div>3 MARTIAL ARTS.</div>
       </div>
-      <div className="flex flex-col items-center justify-center px-16 py-8">
-        <div className="p-8 text-4xl">MONTHLY RATES:</div>
-        <div className="flex flex-col md:flex-row w-full">
+      <div className="flex flex-col items-center justify-center px-8 md:px-16 py-8">
+        <div className="md:p-8 p-4 text-4xl">MONTHLY RATES:</div>
+        <div className="flex w-full flex-col md:flex-row">
           <PricingSection
             image="/two_kenshi_kamae.jpg"
             categorySection="ADULTS (18+) -"
@@ -70,18 +72,20 @@ function PricingSection({
   notes?: string;
 }>) {
   return (
-    <div className="flex flex-1 flex-col items-center m-8">
-      <div className="h-auto w-full aspect-square relative">
-        <Image src={image} alt="two kenshi in kamae" fill objectFit="cover"/>
+    <div className="m-0 mb-8 flex flex-1 flex-col items-center md:mb-0 md:mr-8 md:last:mr-0">
+      <div className="relative aspect-square h-auto w-full">
+        <Image src={image} alt="picture of a practice" fill style={{objectFit:"cover"}} />
       </div>
-      <div className="mt-20 text-4xl">{categorySection}</div>
-      <div className="mt-4 text-4xl">{priceSection}</div>
-      <div className="mt-8 text-xl font-thin">
+      <div className="mt-4 text-2xl min-[1795px]:text-4xl">
+        {categorySection}
+      </div>
+      <div className="mt-2 text-2xl">{priceSection}</div>
+      <div className="text-md mt-4 font-thin md:text-lg">
         Pay month to month - no obligations
       </div>
-      <div className="mt-2 text-xl font-thin">Cancel anytime</div>
+      <div className="text-md mt-2 font-thin md:text-lg">Cancel anytime</div>
       {notes && (
-        <div className="mt-2 text-lg font-extralight italic">{notes}</div>
+        <div className="mt-2 text-sm font-extralight italic">{notes}</div>
       )}
     </div>
   );
