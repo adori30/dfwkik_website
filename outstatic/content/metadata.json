@@ -1,6 +1,6 @@
 {
-  "commit": "d0f74f322f719c0a0a4e27758be0d724a51476ab",
-  "generated": "2024-04-19T18:56:46.145Z",
+  "commit": "2b2ff2c94104777336327d40639b21ed086e3e8c",
+  "generated": "2024-04-19T18:58:14.318Z",
   "metadata": [
     {
       "__outstatic": {
@@ -157,8 +157,8 @@
     },
     {
       "__outstatic": {
-        "commit": "d0f74f322f719c0a0a4e27758be0d724a51476ab",
-        "hash": "1603596632",
+        "commit": "2b2ff2c94104777336327d40639b21ed086e3e8c",
+        "hash": "4062028064",
         "path": "outstatic/content/content/jodo.md"
       },
       "author": {
@@ -166,7 +166,7 @@
         "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
       },
       "collection": "content",
-      "coverImage": "/images/277704619_1165381704277829_6379151978708819784_n-k3MT.jpg",
+      "coverImage": "/images/277704619_1165381704277829_6379151978708819784_n-k2Nj.jpg",
       "description": "",
       "inMenu": "disciplines",
       "publishedAt": "2024-04-19T18:25:37.593Z",
