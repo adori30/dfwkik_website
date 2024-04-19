@@ -11,7 +11,7 @@ export default function DojoMap() {
       <img
         alt="Map of the dojo location"
         src="/greenhill_map.jpg"
-        className="m-4 h-44 md:h-96"
+        className="h-44 md:h-96"
       />
     </Zoom>
   );

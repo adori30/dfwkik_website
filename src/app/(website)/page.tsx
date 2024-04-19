@@ -10,15 +10,10 @@ export default function HomePage() {
       <div className="flex flex-col">
         <HeaderPicture />
         <Header />
-        <div className="bg-slate-300 p-12 text-center text-2xl font-thin text-gray-950 md:text-4xl">
-          Our disciplines
-        </div>
         <Disciplines />
-        <div className="p-12 text-center text-2xl font-thin md:text-4xl">
-          Where to find us
-        </div>
         <WhereToFindUs />
         <ClassSchedule />
+        {/* <ContactUs /> */}
       </div>
     </>
   );
@@ -35,7 +30,7 @@ function HeaderPicture() {
           alt="picture of a kendoka"
         />
       </div> */}
-      <div className="absolute right-0 z-0 h-96 w-full md:-top-24 md:h-[50rem] md:max-w-[1200px] min-[1790px]:max-w-[1500px]">
+      <div className="absolute right-5 z-0 h-96 w-full md:-top-24 md:h-[50rem] md:max-w-[1200px] min-[1790px]:max-w-[1500px]">
         <Image
           src={"/kamae_clipped.png"}
           fill
@@ -49,18 +44,16 @@ function HeaderPicture() {
 
 function Header() {
   return (
-    <div className="flex h-96 md:mt-12 items-center justify-center">
+    <div className="flex h-96 items-center justify-center md:mt-12">
       <div className="relative z-10 flex h-full flex-col items-center justify-center md:mr-28">
-        <div className="mt-auto p-4 text-xl font-light md:mt-0 lg:text-5xl md:text-3xl">
+        <div className="mt-auto p-4 text-xl font-light md:mt-0 md:text-3xl lg:text-5xl">
           Learn the arts of Japanese swordsmanship in DFW
         </div>
         <div className="mb-auto self-start pl-4 font-thin md:mb-0 md:text-xl">
           Established 1976
         </div>
         <HeaderButton className="mb-8 md:mb-0">
-          <Link href="/join-us">
-            Join us now
-          </Link>
+          <Link href="/join-us">Join us now</Link>
         </HeaderButton>
       </div>
     </div>
@@ -69,26 +62,28 @@ function Header() {
 
 function Disciplines() {
   return (
-    <div className="flex min-h-96 min-w-max flex-col bg-slate-300 md:flex-row">
-      <DisciplineTile
-        name="Kendo"
-        description="Japanese martial art emphasizing swordsmanship."
-        backgroundImg="kendo_pic.jpg"
-        href="kendo"
-      />
-      <DisciplineTile
-        name="Iaido"
-        description="Discipline focusing on the art of drawing the sword."
-        backgroundImg="iaido_pic.jpg"
-        href="iaido"
-      />
-      <DisciplineTile
-        name={"Jodo"}
-        description="Traditional Japanese staff fighting technique."
-        backgroundImg="jodo_pic.jpg"
-        href="jodo"
-      />
-    </div>
+    <Section title="Our disciplines" withBackground>
+      <div className="flex min-w-max flex-col md:flex-row">
+        <DisciplineTile
+          name="Kendo"
+          description="Japanese martial art emphasizing swordsmanship."
+          backgroundImg="kendo_pic.jpg"
+          href="kendo"
+        />
+        <DisciplineTile
+          name="Iaido"
+          description="Discipline focusing on the art of drawing the sword."
+          backgroundImg="iaido_pic.jpg"
+          href="iaido"
+        />
+        <DisciplineTile
+          name={"Jodo"}
+          description="Traditional Japanese staff fighting technique."
+          backgroundImg="jodo_pic.jpg"
+          href="jodo"
+        />
+      </div>
+    </Section>
   );
 }
 
@@ -105,7 +100,7 @@ function DisciplineTile({
 }>) {
   return (
     <div
-      className="group relative m-4 h-72 cursor-pointer bg-cover bg-center text-5xl transition-all md:flex-1"
+      className="group relative mb-4 mr-0 h-72 cursor-pointer bg-cover bg-center text-5xl text-white transition-all last:mb-0 md:mb-0 md:mr-4 md:flex-1 md:last:mr-0"
       style={{ backgroundImage: `url('/${backgroundImg}')` }}
     >
       <Link href={href}>
@@ -135,32 +130,33 @@ function HeaderButton({
 
 function WhereToFindUs() {
   return (
-    <div className="m-4 flex flex-col justify-between md:mb-12 md:h-96 md:flex-row">
-      <div className="content-center text-xl font-extralight md:w-1/2 md:pl-16 md:pr-16 md:text-2xl">
-        <div>
-          We practice at Greenhill School. It is located on the North West
-          corner of of Midway and Spring Valley. Practice is held in the Main
-          Gymnasium (Indicated by H), best accessed from the Hornet Drive
-          entrance off of Midway (Indicated by O).
+    <Section title="Where to find us">
+      <div className="flex flex-col justify-between md:h-96 md:flex-row">
+        <div className="content-center text-xl font-extralight md:w-1/2 md:text-2xl">
+          <div>
+            We practice at Greenhill School. It is located on the North West
+            corner of of Midway and Spring Valley. Practice is held in the Main
+            Gymnasium (Indicated by H), best accessed from the Hornet Drive
+            entrance off of Midway (Indicated by O).
+          </div>
+          <div className="mt-12 underline">
+            <Link href={"https://maps.app.goo.gl/D13em6GkePDxQCyT7"}>
+              4141 Spring Valley Rd. Addison, Texas 75001
+            </Link>
+          </div>
         </div>
-        <div className="mt-12 underline">
-          <Link href={"https://maps.app.goo.gl/D13em6GkePDxQCyT7"}>
-            4141 Spring Valley Rd. Addison, Texas 75001
-          </Link>
+        <div className="flex flex-row content-end justify-center md:h-96 md:w-1/2 md:justify-end">
+          <DojoMap />
         </div>
       </div>
-      <div className="flex flex-row content-end justify-center md:h-96 md:w-1/2 md:justify-end">
-        <DojoMap />
-      </div>
-    </div>
+    </Section>
   );
 }
 
 function ClassSchedule() {
   return (
-    <div className="flex flex-col items-center bg-slate-300 pb-8 pt-8 text-center text-2xl font-thin text-gray-950 md:p-12 md:text-4xl">
-      <div>Class schedule</div>
-      <div className="mt-4 min-w-fit text-lg md:m-8 md:w-1/2 md:text-2xl">
+    <Section title="Class schedule" withBackground>
+      <div className="min-w-fit text-lg md:m-auto md:w-1/2 md:text-2xl">
         <table className="w-full font-extralight">
           <tbody>
             <tr>
@@ -209,6 +205,33 @@ function ClassSchedule() {
             </tr>
           </tbody>
         </table>
+      </div>
+    </Section>
+  );
+}
+
+function ContactUs() {
+  return <Section title="Contact us">here</Section>;
+}
+
+function Section({
+  title,
+  withBackground,
+  children,
+  className,
+}: Readonly<{
+  title: string;
+  withBackground?: boolean;
+  children: ReactNode;
+  className?: string;
+}>) {
+  return (
+    <div
+      className={`flex flex-col px-4 md:px-8 ${withBackground && "bg-slate-300"} py-8 text-2xl font-thin ${withBackground && "text-gray-950"} md:text-4xl ${className}`}
+    >
+      <div className="text-center">{title}</div>
+      <div className="mt-4 w-full text-lg md:mt-8 md:text-2xl">
+        {children}
       </div>
     </div>
   );
