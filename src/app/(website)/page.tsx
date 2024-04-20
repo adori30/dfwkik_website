@@ -30,7 +30,7 @@ function HeaderPicture() {
           alt="picture of a kendoka"
         />
       </div> */}
-      <div className="absolute right-5 z-0 h-96 w-full md:-top-24 md:h-[50rem] md:max-w-[1200px] min-[1790px]:max-w-[1500px]">
+      <div className="absolute md:right-5  z-0 h-96 w-full md:-top-24 md:h-[50rem] md:max-w-[1200px] min-[1790px]:max-w-[1500px]">
         <Image
           src={"/kamae_clipped.png"}
           fill
@@ -145,7 +145,7 @@ function WhereToFindUs() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-row content-end justify-center md:h-96 md:w-1/2 md:justify-end">
+        <div className="flex flex-row content-end justify-center md:h-96 md:w-1/2 md:justify-end md:mt-0 mt-8">
           <DojoMap />
         </div>
       </div>
