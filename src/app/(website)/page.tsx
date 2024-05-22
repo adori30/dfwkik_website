@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import DojoMap from "./dojo-map";
-import NavBar from "./nav-bar";
 
 export default function HomePage() {
   return (

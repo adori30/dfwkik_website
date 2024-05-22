@@ -17,6 +17,15 @@ export default function Socials({
       />
       <SocialIcon
         url="https://www.instagram.com/DFWKIK"
+        style={{
+          height: "32px",
+          width: "32px",
+          marginRight: "8px",
+        }}
+        bgColor="#333333"
+      />
+      <SocialIcon
+        url="mailto:inquires@dfwkik.org"
         style={{ height: "32px", width: "32px" }}
         bgColor="#333333"
       />
