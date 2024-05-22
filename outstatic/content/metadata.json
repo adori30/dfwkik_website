@@ -1,6 +1,6 @@
 {
-  "commit": "6732e78939dadd9223b1d76865ad0e14ce1d1123",
-  "generated": "2024-05-22T02:24:27.682Z",
+  "commit": "e9bf0bea08b7cf1f76d81d03ae5c63f655ba0178",
+  "generated": "2024-05-22T02:29:08.527Z",
   "metadata": [
     {
       "__outstatic": {
@@ -39,26 +39,6 @@
       "slug": "disciplines",
       "status": "published",
       "title": "Disciplines"
-    },
-    {
-      "__outstatic": {
-        "commit": "04e6d5680a8cef8e1e15f9dccf9efcb09ff00bf8",
-        "hash": "429572423",
-        "path": "outstatic/content/content/kendo.md"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
-      },
-      "collection": "content",
-      "coverImage": "/images/dsc00913-g2ND.jpg",
-      "description": "",
-      "inMenu": "disciplines",
-      "publishedAt": "2024-04-09T16:26:15.120Z",
-      "slug": "kendo",
-      "status": "published",
-      "title": "Kendo",
-      "youtubeEmbed": "Audqa9Oxo1Q"
     },
     {
       "__outstatic": {
@@ -173,6 +153,26 @@
       "slug": "jodo",
       "status": "published",
       "title": "Jodo"
+    },
+    {
+      "__outstatic": {
+        "commit": "e9bf0bea08b7cf1f76d81d03ae5c63f655ba0178",
+        "hash": "1713126856",
+        "path": "outstatic/content/content/kendo.md"
+      },
+      "author": {
+        "name": "",
+        "picture": "https://avatars.githubusercontent.com/u/11914613?v=4"
+      },
+      "collection": "content",
+      "coverImage": "/images/dsc00913-g2ND.jpg",
+      "description": "",
+      "inMenu": "disciplines",
+      "publishedAt": "2024-04-09T16:26:15.120Z",
+      "slug": "kendo",
+      "status": "published",
+      "title": "Kendo",
+      "youtubeEmbed": "Audqa9Oxo1Q"
     }
   ]
 }
