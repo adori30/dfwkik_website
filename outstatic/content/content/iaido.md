@@ -13,7 +13,7 @@ publishedAt: '2024-04-09T20:10:03.610Z'
 
 Iaido (居合道) is a traditional Japanese martial art focused on the smooth, controlled movements of drawing, cutting with, and re-sheathing a katana (Japanese sword). Rooted in the samurai's practice of swordsmanship, Iaido emphasizes precision, mindfulness, and the perfection of form. Practitioners, known as Iaidoka, perform solo kata (forms) that simulate combat against one or more opponents, honing their skills in readiness, speed, and mental clarity.
 
-#### Benefits of Practicing Iaido
+### Benefits of Practicing Iaido
 
 Practicing Iaido offers numerous physical and mental benefits, including:
 
@@ -23,7 +23,7 @@ Practicing Iaido offers numerous physical and mental benefits, including:
 4. **Discipline and Patience**: Mastery of Iaido demands patience, persistence, and a disciplined approach, which can translate into other areas of life.
 5. **Cultural Appreciation**: Learning Iaido provides insight into Japanese culture and the samurai ethos, fostering a deeper appreciation for history and tradition.
 
-#### Learning Iaido at DFWKIK
+### Learning Iaido at DFWKIK
 
 At Dallas Fort-Worth Kendo & Iaido Kyokai, we are dedicated to preserving and teaching the art of Iaido in a supportive and structured environment. Our experienced instructors guide students through the foundational techniques and advanced forms, ensuring a comprehensive understanding of this elegant martial art. Here's what you can expect when you join our Iaido classes:
 
