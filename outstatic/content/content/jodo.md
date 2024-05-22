@@ -33,4 +33,3 @@ At Dallas Fort-Worth Kendo & Iaido Kyokai, we are committed to teaching the art 
 - **Comprehensive Curriculum**: Our training program covers all aspects of Jodo, from basic movements to complex kata, with a focus on proper technique and form.
 - **Supportive Community**: Become part of a community that values mutual respect, continuous learning, and personal growth. Our dojo fosters a sense of camaraderie and support.
 - **Consistent Practice**: Regular practice sessions ensure steady improvement, with opportunities to participate in demonstrations, seminars, and competitions.
-- 
