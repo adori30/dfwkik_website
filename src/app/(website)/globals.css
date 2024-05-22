@@ -60,6 +60,13 @@ body {
       }
     }
 
+    ol {
+      @apply list-decimal ml-8;
+      li {
+        @apply mb-4;
+      }
+    }
+
     img {
       @apply m-auto;
     }
