@@ -11,7 +11,7 @@ inMenu: 'disciplines'
 publishedAt: '2024-04-19T18:25:37.593Z'
 ---
 
-Jodo (杖道), also known as "the Way of the Jo," is a traditional Japanese martial art that focuses on the use of the Jo, a wooden staff typically about 128 cm (50 inches) long. Developed by Muso Gonnosuke in the early 17th century, Jodo was created as a means to defend against the katana. The art combines strikes, thrusts, sweeps, and blocks, emphasizing fluidity, precision, and control. Practitioners of Jodo, known as Jodoka, engage in kata (pre-arranged forms) that simulate encounters with swordsmen, enhancing their technical skills and strategic thinking.
+TESTING IN BRANCH Jodo (杖道), also known as "the Way of the Jo," is a traditional Japanese martial art that focuses on the use of the Jo, a wooden staff typically about 128 cm (50 inches) long. Developed by Muso Gonnosuke in the early 17th century, Jodo was created as a means to defend against the katana. The art combines strikes, thrusts, sweeps, and blocks, emphasizing fluidity, precision, and control. Practitioners of Jodo, known as Jodoka, engage in kata (pre-arranged forms) that simulate encounters with swordsmen, enhancing their technical skills and strategic thinking.
 
 ### Benefits of Practicing Jodo
 
